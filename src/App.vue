@@ -1,32 +1,58 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar app color="#0A0CFA" elevation="0" dark height="64px">
+      <v-container fluid class="py-0">
+        <v-row align="center">
+          <v-col>
+            Logo
+          </v-col>
+          <v-col class="text-right">
+            <v-btn icon dark :ripple="false">
+              <v-icon size="48">mdi-menu</v-icon>
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-app-bar>
+
+    <v-main>
+      <router-view />
+    </v-main>
+
+    <v-footer>
+      <v-container fluid>
+        <v-row align="center">
+          <v-col cols="4">
+            <a href="mailto:luztopia@luztopia.com" class="black--text not-decorated">CONTACTANOS</a>
+          </v-col>
+          <v-col cols="4" class="text-center">
+            NOS VEMOS PRONTO ;)
+          </v-col>
+          <v-col cols="4" class="text-right">
+            <router-link to="/terminos-y-condiciones" class="black--text not-decorated">TERMINOS Y CONDICIONES</router-link>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-footer>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: 'App',
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+  },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+  data: () => ({
+    //
+  })
 }
+</script>
+
+<style scoped>
+  .not-decorated{
+    text-decoration: none !important;
+  }
 </style>
