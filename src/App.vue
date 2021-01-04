@@ -22,13 +22,13 @@
     <v-footer>
       <v-container fluid>
         <v-row align="center">
-          <v-col cols="4">
+          <v-col cols="12" md="4" class="text-center text-md-left">
             <a href="mailto:luztopia@luztopia.com" class="black--text not-decorated">CONTACTANOS</a>
           </v-col>
-          <v-col cols="4" class="text-center">
+          <v-col cols="12" md="4" class="text-center text-md-center">
             NOS VEMOS PRONTO ;]
           </v-col>
-          <v-col cols="4" class="text-right">
+          <v-col cols="12" md="4" class="text-center text-md-right">
             <router-link to="/terminos-y-condiciones" class="black--text not-decorated">TERMINOS Y CONDICIONES</router-link>
           </v-col>
         </v-row>
