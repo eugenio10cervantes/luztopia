@@ -26,7 +26,7 @@
             <a href="mailto:luztopia@luztopia.com" class="black--text not-decorated">CONTACTANOS</a>
           </v-col>
           <v-col cols="4" class="text-center">
-            NOS VEMOS PRONTO ;)
+            NOS VEMOS PRONTO ;]
           </v-col>
           <v-col cols="4" class="text-right">
             <router-link to="/terminos-y-condiciones" class="black--text not-decorated">TERMINOS Y CONDICIONES</router-link>

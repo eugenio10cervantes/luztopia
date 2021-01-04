@@ -9,6 +9,7 @@
           </v-col>
         </v-row>
       </v-container>
+      s
 
       <v-container fluid class="atracciones" style="background-color: #FF00EA;">
         <v-row>
