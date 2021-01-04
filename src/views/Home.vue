@@ -4,12 +4,11 @@
       <v-container fluid class="intro py-0">
         <v-row>
           <v-col class="px-0 py-0">
-            <video :src="'http://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop class="d-none d-md-inline"></video>
-            <video :src="'http://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop class="d-md-none"></video>
+            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop class="d-none d-md-inline"></video>
+            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop class="d-md-none"></video>
           </v-col>
         </v-row>
       </v-container>
-      s
 
       <v-container fluid class="atracciones" style="background-color: #FF00EA;">
         <v-row>
@@ -21,7 +20,7 @@
           <template v-for="(atraccion, a) in atracciones">
             <v-col :key="'atracciones-'+a" cols="6" md="4" class="px-0 py-0">
               <v-hover v-slot="{ hover }">
-                <v-img :src="'http://luztopiacms.actstudio.xyz/'+atraccion.image.path" style="height: 100%">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+atraccion.image.path" style="height: 100%">
                   <div class="d-flex" v-if="hover" style="height: 100%; background-color: #FF00EA;">
                     <v-container fluid class="py-0">
                       <v-row class="ma-0" style="height: 100%;" align="center">
@@ -47,12 +46,12 @@
         </v-row>
         <v-row>
           <v-col class="px-0">
-            <v-img :src="'http://luztopiacms.actstudio.xyz/'+home.mapa.path"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.mapa.path"></v-img>
           </v-col>
         </v-row>
         <v-row>
           <v-col class="px-0 py-0">
-            <v-img :src="'http://luztopiacms.actstudio.xyz/'+home.iconosMapaDesktop.path"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.iconosMapaDesktop.path"></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -68,7 +67,7 @@
 
           <template v-for="(patrocinador, p) in patrocinadores">
             <v-col :key="'sponsor-'+p" cols="auto">
-              <v-img :src="'http://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="131px"></v-img>
+              <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="131px"></v-img>
             </v-col>
           </template>
         </v-row>
@@ -83,7 +82,7 @@
         <v-row justify="center" align="center" class="py-12">
           <template v-for="(consejero,c) in consejo">
             <v-col :key="'consejero-'+c" cols="auto">
-              <v-img :src="'http://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="131px"></v-img>
+              <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="131px"></v-img>
             </v-col>
           </template>
         </v-row>
@@ -92,7 +91,7 @@
       <v-container fluid class="boletos">
         <v-row>
           <v-col class="px-0 py-0">
-            <video :src="'http://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop></video>
+            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop></video>
           </v-col>
         </v-row>
       </v-container>
@@ -125,7 +124,7 @@ export default {
   },
   beforeCreate: function () {
     var aux = this
-    fetch('http://www.luztopiacms.actstudio.xyz/api/collections/get/Patrocinadores', {
+    fetch('https://www.luztopiacms.actstudio.xyz/api/collections/get/Patrocinadores', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -138,7 +137,7 @@ export default {
         aux.patrocinadores = res.entries
       })
 
-    fetch('http://www.luztopiacms.actstudio.xyz/api/collections/get/Consejo', {
+    fetch('https://www.luztopiacms.actstudio.xyz/api/collections/get/Consejo', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -151,7 +150,7 @@ export default {
         aux.consejo = res.entries
       })
 
-    fetch('http://www.luztopiacms.actstudio.xyz/api/collections/get/Atracciones', {
+    fetch('https://www.luztopiacms.actstudio.xyz/api/collections/get/Atracciones', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -164,7 +163,7 @@ export default {
         aux.atracciones = res.entries
       })
 
-    fetch('http://www.luztopiacms.actstudio.xyz/api/singletons/get/Home')
+    fetch('https://www.luztopiacms.actstudio.xyz/api/singletons/get/Home')
       .then(data => data.json())
       .then(function (data) {
         aux.home = data
