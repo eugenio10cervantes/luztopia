@@ -4,7 +4,7 @@
       <v-container fluid class="py-0">
         <v-row align="center">
           <v-col>
-            Logo
+            <v-img src="@/assets/img/logo.svg" width="30"></v-img>
           </v-col>
           <v-col class="text-right">
             <v-btn icon dark :ripple="false">
