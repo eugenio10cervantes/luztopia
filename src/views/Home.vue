@@ -90,6 +90,11 @@
           <v-img src="../assets/img/FOOTER.svg" width="100%"></v-img>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col>
+          NEEEWW
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
