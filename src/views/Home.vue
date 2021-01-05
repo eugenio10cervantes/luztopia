@@ -1,6 +1,18 @@
 <template>
   <div class="home">
     <template v-if="loaded">
+
+      <v-dialog
+        v-model="dialog"
+        max-width="900"
+      >
+        <v-card>
+          <v-card-text class="pa-0">
+            <v-img src="../assets/img/FOOTER.svg"></v-img>
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+
       <v-container fluid class="intro py-0">
         <v-row>
           <v-col class="px-0 py-0">
@@ -10,7 +22,7 @@
         </v-row>
       </v-container>
 
-      <v-container fluid class="atracciones" style="background-color: #FF00EA;">
+      <v-container fluid id="atracciones" style="background-color: #FF00EA;">
         <v-row>
           <v-col class="px-0">
             <v-img src="../assets/img/titulos/ATRACCIONES.svg" max-height="137" contain position="left"></v-img>
@@ -25,8 +37,8 @@
                     <v-container fluid class="py-0">
                       <v-row class="ma-0" style="height: 100%;" align="center">
                         <v-col class="text-center py-0">
-                          <span class="white--text d-block">{{atraccion.name}}</span>
-                          <span class="white--text">{{atraccion.description}}</span>
+                          <span class="white--text d-block atraccion-titulo">{{atraccion.name}}</span>
+                          <span class="white--text atraccion-descripcion">{{atraccion.description}}</span>
                         </v-col>
                       </v-row>
                     </v-container>
@@ -38,7 +50,7 @@
         </v-row>
       </v-container>
 
-      <v-container fluid class="mapa" style="background-color: #FF00EA;">
+      <v-container fluid id="mapa" style="background-color: #FF00EA;">
         <v-row>
           <v-col class="px-0 text-right">
             <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img>
@@ -56,39 +68,47 @@
         </v-row>
       </v-container>
 
-      <v-container fluid class="patrocinadores" style="background-color: #0A0CFA;">
+      <v-container fluid id="patrocinadores" style="background-color: #0A0CFA;">
         <v-row>
           <v-col class="py-0 px-0">
             <v-img src="../assets/img/titulos/patrocinadores.svg" max-height="137" contain position="left"></v-img>
           </v-col>
         </v-row>
-
-        <v-row justify="center" align="center" class="py-12">
-
-          <template v-for="(patrocinador, p) in patrocinadores">
-            <v-col :key="'sponsor-'+p" cols="auto">
-              <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="131px"></v-img>
-            </v-col>
-          </template>
-        </v-row>
       </v-container>
 
-      <v-container fluid class="conseko" style="background-color: #0A0CFA;">
+      <div style="background-color: #0A0CFA;">
+        <v-container>
+          <v-row align="center" class="py-12">
+
+            <template v-for="(patrocinador, p) in patrocinadores">
+              <v-col :key="'sponsor-'+p" cols="6" md="3">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="60%" class="mx-auto" aspect-ratio="1"></v-img>
+              </v-col>
+            </template>
+          </v-row>
+        </v-container>
+      </div>
+
+      <v-container fluid id="consejo" style="background-color: #0A0CFA;">
         <v-row>
           <v-col class="py-0 px-0 text-right">
             <v-img src="../assets/img/titulos/CONSEJO.svg" max-height="137" contain position="right"></v-img>
           </v-col>
         </v-row>
-        <v-row justify="center" align="center" class="py-12">
-          <template v-for="(consejero,c) in consejo">
-            <v-col :key="'consejero-'+c" cols="auto">
-              <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="131px"></v-img>
-            </v-col>
-          </template>
-        </v-row>
       </v-container>
+      <div style="background-color: #0A0CFA;">
+        <v-container>
+          <v-row align="center" class="py-12">
+            <template v-for="(consejero,c) in consejo">
+              <v-col :key="'consejero-'+c" cols="6" md="3">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="60%" class="mx-auto" aspect-ratio="1"></v-img>
+              </v-col>
+            </template>
+          </v-row>
+        </v-container>
+      </div>
 
-      <v-container fluid class="boletos">
+      <v-container fluid id="boletos">
         <v-row>
           <v-col class="px-0 py-0">
             <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop></video>
@@ -117,7 +137,8 @@ export default {
       consejo: [],
       atracciones: [],
       home: {},
-      loaded: false
+      loaded: false,
+      dialog: true
     }
   },
   components: {
@@ -191,5 +212,19 @@ export default {
     video{
       width: 100%;
     }
+  }
+
+  .atraccion-titulo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  .atraccion-descripcion{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
   }
 </style>
