@@ -63,7 +63,8 @@
         </v-row>
         <v-row>
           <v-col class="px-0 py-0">
-            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.iconosMapaDesktop.path"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.iconosMapaDesktop.path" class="d-none d-md-flex"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.iconosMapaMovil.path" class="d-md-none"></v-img>
           </v-col>
         </v-row>
       </v-container>
