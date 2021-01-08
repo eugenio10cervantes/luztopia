@@ -24,8 +24,8 @@
         attach="#menu"
       >
         <v-card height="100%">
-          <v-card-text>
-            <v-container fluid>
+          <v-card-text class="px-4">
+            <v-container fluid class="py-2">
               <v-row align="center">
                 <v-col>
                   <v-img src="@/assets/img/logo-black.svg" width="30"></v-img>
@@ -37,7 +37,7 @@
                 </v-col>
               </v-row>
 
-              <v-row justify="center" class="my-9">
+              <v-row justify="center" class="my-9 my-md-9">
                 <v-col cols="auto">
                   <v-btn text :ripple="false" color="transparent" @click="$vuetify.goTo(0); dialog = false;">
                     <span class="black--text menu-item">INICIO</span>

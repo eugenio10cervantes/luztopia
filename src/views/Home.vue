@@ -2,22 +2,25 @@
   <div class="home">
     <template v-if="loaded">
 
-      <v-dialog
-        v-model="dialog"
-        max-width="900"
-      >
-        <v-card>
-          <v-card-text class="pa-0">
-            <v-img src="../assets/img/FOOTER.svg"></v-img>
-          </v-card-text>
-        </v-card>
-      </v-dialog>
+      <template v-if="dialog">
+        <v-dialog
+          v-model="dialog"
+          max-width="900"
+        >
+          <v-card>
+            <v-card-text class="pa-0">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/'+popup.imagen.path"></v-img>
+              <!-- <v-img src="../assets/img/FOOTER.svg"></v-img> -->
+            </v-card-text>
+          </v-card>
+        </v-dialog>
+      </template>
 
       <v-container fluid class="intro py-0">
         <v-row>
           <v-col class="px-0 py-0">
-            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop class="d-none d-md-inline"></video>
-            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop class="d-md-none"></video>
+            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
+            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-md-none"></video>
           </v-col>
         </v-row>
       </v-container>
@@ -112,7 +115,7 @@
       <v-container fluid id="boletos">
         <v-row>
           <v-col class="px-0 py-0">
-            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop></video>
+            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop playsinline></video>
           </v-col>
         </v-row>
       </v-container>
@@ -120,7 +123,7 @@
       <v-container fluid class="py-0">
         <v-row>
           <v-col class="px-0 py-0">
-            <v-img src="../assets/img/FOOTER.svg" width="100%"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.footerImage.path" width="100%"></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -139,7 +142,9 @@ export default {
       atracciones: [],
       home: {},
       loaded: false,
-      dialog: true
+      dialog: false,
+      popup: {
+      }
     }
   },
   components: {
@@ -190,6 +195,13 @@ export default {
       .then(function (data) {
         aux.home = data
         aux.loaded = true
+      })
+
+    fetch('https://www.luztopiacms.actstudio.xyz/api/singletons/get/Popup')
+      .then(data => data.json())
+      .then(function (data) {
+        aux.popup = data
+        aux.dialog = aux.popup.active
       })
   }
 }
