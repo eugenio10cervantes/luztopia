@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="#0A0CFA" elevation="0" dark height="64px">
+    <v-app-bar app color="transparent" elevation="0" dark height="64px">
       <v-container fluid class="py-0">
         <v-row align="center">
           <v-col>
@@ -33,7 +33,7 @@
                 </v-col>
                 <v-col class="text-right">
                   <v-btn icon @click="dialog = false;">
-                    <v-icon>mdi-close</v-icon>
+                    <v-icon size="48" color="black">mdi-close</v-icon>
                   </v-btn>
                 </v-col>
               </v-row>
@@ -87,17 +87,17 @@
       <router-view />
     </v-main>
 
-    <v-footer id="footer">
+    <v-footer id="footer" color="white">
       <v-container fluid>
         <v-row align="center">
           <v-col cols="12" md="4" class="text-center text-md-left">
-            <a href="mailto:luztopia@luztopia.com" class="black--text not-decorated roboto-condensed" style="font-size: 18px; letter-spacing: -1px;">CONTACTANOS</a>
+            <a href="mailto:luztopia@luztopia.com" class="black--text not-decorated roboto-condensed footer-link">CONTACTANOS</a>
           </v-col>
           <v-col cols="12" md="4" class="text-center text-md-center">
-            <span class="roboto-condensed" style="font-size: 32px; letter-spacing: -1px; font-weight: bold;">NOS VEMOS PRONTO :)</span>
+            <span class="roboto-condensed footer-text">NOS VEMOS PRONTO :)</span>
           </v-col>
           <v-col cols="12" md="4" class="text-center text-md-right">
-            <router-link to="/terminos-y-condiciones" class="black--text not-decorated roboto-condensed" style="font-size: 18px; letter-spacing: -1px;">TERMINOS Y CONDICIONES</router-link>
+            <router-link to="/terminos-y-condiciones" class="black--text not-decorated roboto-condensed footer-link">TERMINOS Y CONDICIONES</router-link>
           </v-col>
         </v-row>
       </v-container>

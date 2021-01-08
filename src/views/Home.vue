@@ -233,11 +233,22 @@ export default {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -1px;
+
+    @media screen and (max-width: 599px){
+      font-size: 26px;
+      line-height: 1;
+    }
   }
 
   .atraccion-descripcion{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 18px;
+    @media screen and (max-width: 599px){
+      margin-top: 10px;
+      font-size: 10px;
+      line-height: 1.2;
+      display: block;
+    }
   }
 </style>
