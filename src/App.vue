@@ -22,6 +22,7 @@
         max-width="100%"
         transition="slide-y-transition"
         attach="#menu"
+        :fullscreen="width < 600"
       >
         <v-card height="100%">
           <v-card-text class="px-4">
@@ -114,7 +115,12 @@ export default {
 
   data: () => ({
     dialog: false
-  })
+  }),
+  computed: {
+    width: function () {
+      return this.$vuetify.breakpoint.width
+    }
+  }
 }
 </script>
 
