@@ -19,8 +19,20 @@
       <v-container fluid class="intro py-0">
         <v-row>
           <v-col class="px-0 py-0">
-            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
-            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-md-none"></video>
+            <template v-if="home.cover.video">
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
+            </template>
+            <template v-if="home.cover.image">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" height="100vh" class="d-none d-md-flex"></v-img>
+            </template>
+
+            <template v-if="home.coverMovil.video">
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
+            </template>
+
+            <template v-if="home.coverMovil.image">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" height="100vh" class="d-md-none"></v-img>
+            </template>
           </v-col>
         </v-row>
       </v-container>
@@ -115,7 +127,19 @@
       <v-container fluid id="boletos">
         <v-row>
           <v-col class="px-0 py-0">
-            <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop playsinline></video>
+            <template v-if="home.videoBoletos.video">
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
+            </template>
+            <template v-if="home.videoBoletos.image">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletos.path" class="d-none d-md-flex" height="100vh"></v-img>
+            </template>
+            <template v-if="home.videoBoletosMovil.video">
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletosMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
+            </template>
+            <template v-if="home.videoBoletosMovil.image">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.videoBoletosMovil.path" class="d-md-none" width="100%"></v-img>
+            </template>
+
           </v-col>
         </v-row>
       </v-container>

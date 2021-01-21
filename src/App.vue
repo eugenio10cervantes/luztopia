@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="transparent" elevation="0" dark height="64px">
+    <v-app-bar fixed color="transparent" elevation="0" dark height="64px">
       <v-container fluid class="py-0">
         <v-row align="center">
           <v-col>
