@@ -147,7 +147,8 @@
       <v-container fluid class="py-0">
         <v-row>
           <v-col class="px-0 py-0">
-            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.footerImage.path" width="100%"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.footerImage.path" width="100%" class="d-none d-md-flex"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.footerImageMovil.path" width="100%" class="d-md-none"></v-img>
           </v-col>
         </v-row>
       </v-container>
