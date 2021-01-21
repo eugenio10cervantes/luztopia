@@ -8,7 +8,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: '/terminos-y-condiciones',
+        name: 'TerminosYCondiciones',
+        component: () => import('../views/TerminosYCondiciones.vue')
+      }
+    ]
   },
   {
     path: '/about',

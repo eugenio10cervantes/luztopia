@@ -7,10 +7,33 @@
           v-model="dialog"
           max-width="900"
         >
-          <v-card>
+          <v-card class="text-right">
+            <div style="position: absolute; top: 0px; z-index: 1; right: 0px;">
+              <v-btn icon :ripple="false" @click="dialog = false;">
+                <v-icon color="white">mdi-close</v-icon>
+              </v-btn>
+            </div>
             <v-card-text class="pa-0">
               <v-img :src="'https://luztopiacms.actstudio.xyz/'+popup.imagen.path"></v-img>
               <!-- <v-img src="../assets/img/FOOTER.svg"></v-img> -->
+            </v-card-text>
+          </v-card>
+        </v-dialog>
+      </template>
+
+      <template v-if="($route.name == 'TerminosYCondiciones')">
+        <v-dialog
+          v-model="terminos"
+          max-width="900" persistent
+        >
+          <v-card class="text-right">
+            <div style="position: sticky; top: 0px; z-index: 1; right: 0px;">
+              <v-btn icon :ripple="false" to="/">
+                <v-icon color="black">mdi-close</v-icon>
+              </v-btn>
+            </div>
+            <v-card-text class="pa-0">
+              <div class="pt-6 pb-6 text-left px-6" v-html="terms.texto"></div>
             </v-card-text>
           </v-card>
         </v-dialog>
@@ -73,7 +96,8 @@
         </v-row>
         <v-row>
           <v-col class="px-0">
-            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.mapa.path"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.mapa.path" class="d-none d-md-flex"></v-img>
+            <v-img :src="'https://luztopiacms.actstudio.xyz/'+home.mapaMovil.path" class="d-md-none"></v-img>
           </v-col>
         </v-row>
         <v-row>
@@ -169,7 +193,14 @@ export default {
       loaded: false,
       dialog: false,
       popup: {
+      },
+      terms: {
       }
+    }
+  },
+  computed: {
+    terminos: function () {
+      return (this.$route.name === 'TerminosYCondiciones')
     }
   },
   components: {
@@ -220,6 +251,12 @@ export default {
       .then(function (data) {
         aux.home = data
         aux.loaded = true
+      })
+
+    fetch('https://www.luztopiacms.actstudio.xyz/api/singletons/get/Terminos')
+      .then(data => data.json())
+      .then(function (data) {
+        aux.terms = data
       })
 
     fetch('https://www.luztopiacms.actstudio.xyz/api/singletons/get/Popup')
