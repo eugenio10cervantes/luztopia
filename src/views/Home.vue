@@ -39,26 +39,26 @@
         </v-dialog>
       </template>
 
-      <v-container fluid class="intro py-0">
-        <v-row>
-          <v-col class="px-0 py-0">
-            <template v-if="home.cover.video">
-              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
-            </template>
-            <template v-if="home.cover.image">
-              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" height="100vh" class="d-none d-md-flex"></v-img>
-            </template>
+        <v-container fluid class="intro py-0">
+          <v-row class="my-0">
+            <v-col class="px-0 py-0">
+              <template v-if="home.cover.video">
+                <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
+              </template>
+              <template v-if="home.cover.image">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" width="100%" height="100vh" class="d-none d-md-flex" position="center bottom"></v-img>
+              </template>
 
-            <template v-if="home.coverMovil.video">
-              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
-            </template>
+              <template v-if="home.coverMovil.video">
+                <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
+              </template>
 
-            <template v-if="home.coverMovil.image">
-              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" height="100vh" class="d-md-none"></v-img>
-            </template>
-          </v-col>
-        </v-row>
-      </v-container>
+              <template v-if="home.coverMovil.image">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" height="100vh" class="d-md-none"></v-img>
+              </template>
+            </v-col>
+          </v-row>
+        </v-container>
 
       <v-container fluid id="atracciones" style="background-color: #FF00EA;">
         <v-row>
