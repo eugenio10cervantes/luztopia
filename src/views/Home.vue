@@ -63,12 +63,12 @@
       <div id="atracciones">
         <v-container fluid class="py-0">
           <v-row class="my-0">
-            <v-col class="py-0" style="background-color: #1CEC17;">
+            <v-col cols="6" class="pt-0 pb-12" style="background-color: #1CEC17;">
               <v-row style="min-height: 100vh" align="start">
                 <v-col>
                   <v-row>
                     <v-col>
-                      <h2 class="roboto-condensed">INFORMACIÓN</h2>
+                      <h2 class="roboto-condensed white--text" style="font-size: 70px;">INFORMACIÓN</h2>
                     </v-col>
                   </v-row>
                   <v-row justify="center">
