@@ -3,12 +3,12 @@
     <v-app-bar fixed color="transparent" elevation="0" dark height="64px">
       <v-container fluid class="py-0">
         <v-row align="center">
-          <v-col cols="auto">
-            <v-img src="@/assets/img/logo.svg" width="30"></v-img>
+          <v-col class="text-left">
+            <v-img src="@/assets/img/logo-luztopia.svg" height="35" contain position="left"></v-img>
           </v-col>
           <template v-if="countdown != false">
-            <v-col cols="auto">
-              Faltan {{ countdown }} días
+            <v-col class="text-center">
+              <span class="bold uppercase roboto-condensed footer-text">¡Faltan {{ countdown }} días!</span>
             </v-col>
           </template>
           <v-col class="text-right">
