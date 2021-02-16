@@ -39,26 +39,79 @@
         </v-dialog>
       </template>
 
-        <v-container fluid class="intro py-0">
+      <v-container fluid class="intro py-0">
+        <v-row class="my-0">
+          <v-col class="px-0 py-0">
+            <template v-if="home.cover.video">
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
+            </template>
+            <template v-if="home.cover.image">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" width="100%" height="100vh" class="d-none d-md-flex" position="center bottom"></v-img>
+            </template>
+
+            <template v-if="home.coverMovil.video">
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
+            </template>
+
+            <template v-if="home.coverMovil.image">
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" height="100vh" class="d-md-none"></v-img>
+            </template>
+          </v-col>
+        </v-row>
+      </v-container>
+
+      <div id="atracciones">
+        <v-container fluid class="py-0">
           <v-row class="my-0">
-            <v-col class="px-0 py-0">
-              <template v-if="home.cover.video">
-                <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
-              </template>
-              <template v-if="home.cover.image">
-                <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" width="100%" height="100vh" class="d-none d-md-flex" position="center bottom"></v-img>
-              </template>
+            <v-col class="py-0" style="background-color: #1CEC17;">
+              <v-row style="min-height: 100vh" align="start">
+                <v-col>
+                  <v-row>
+                    <v-col>
+                      <h2 class="roboto-condensed">INFORMACIÓN</h2>
+                    </v-col>
+                  </v-row>
+                  <v-row justify="center">
+                    <v-col cols="8">
+                      <span class="d-block color-rosa roboto-condensed bold">NUEVA EDICIÓN:</span>
+                      <span class="d-block white--text roboto-condensed bold">NAVIDAD EN EL ESPACIO</span>
 
-              <template v-if="home.coverMovil.video">
-                <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
-              </template>
+                      <span class="d-block color-rosa roboto-condensed bold mt-3">FECHAS:</span>
+                      <span class="d-block white--text roboto-condensed bold">18 DE NOVIEMBRE DE 2021</span>
+                      <span class="d-block white--text roboto-condensed bold">AL 16 DE ENERO DE 2022</span>
+                      <span class="d-block white--text roboto-condensed bold">(Abierto todos los días excepto 24 y 31 de dic)</span>
 
-              <template v-if="home.coverMovil.image">
-                <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" height="100vh" class="d-md-none"></v-img>
-              </template>
+                      <span class="d-block color-rosa roboto-condensed bold mt-3">HORARIO:</span>
+                      <span class="d-block white--text roboto-condensed bold">4pm - 11pm</span>
+                      <span class="d-block white--text roboto-condensed bold">(Encendido de luces: 6pm)</span>
+
+                      <span class="d-block color-rosa roboto-condensed bold mt-3">LUGAR:</span>
+                      <span class="d-block white--text roboto-condensed bold">PARQUE FUNDIDORA, PASEO SANTA LUCÍA</span>
+                      <span class="d-block white--text roboto-condensed bold">A. Fundidora y Adolfo Prieto, Col. Obrera,</span>
+                      <span class="d-block white--text roboto-condensed bold">Monterrey, Nuevo León, México, CP 64010</span>
+
+                      <span class="d-block color-rosa roboto-condensed bold mt-3">ACCESOS:</span>
+                      <span class="d-block white--text roboto-condensed bold">A1 - Av. Fundidora</span>
+                      <span class="d-block white--text roboto-condensed bold">A8 - Calle Gregorio Torres</span>
+                      <span class="d-block white--text roboto-condensed bold">A9 - Santa Lucía, Calle Félix U. Gómez</span>
+                      <span class="d-block white--text roboto-condensed bold">A10 - Fundidora, Calle Aramberri</span>
+
+                      <span class="d-block color-rosa roboto-condensed bold mt-3">ESTACIONAMIENTOS RECOMENDADOS:</span>
+                      <span class="d-block white--text roboto-condensed bold">E10 - Fundidora, Calle Aramberri</span>
+                      <span class="d-block white--text roboto-condensed bold">E Salón de la Fama del Beisbol - Calle Gregorio Torres</span>
+
+                      <v-btn text color="white" :ripple="false">VER MAPA</v-btn>
+                    </v-col>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col class="py-0" style="background-color: #E62AD0;">
+              b
             </v-col>
           </v-row>
         </v-container>
+      </div>
 
       <v-container fluid id="atracciones" style="background-color: #FF00EA;">
         <v-row>

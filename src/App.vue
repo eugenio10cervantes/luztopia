@@ -4,7 +4,7 @@
       <v-container fluid class="py-0">
         <v-row align="center">
           <v-col class="text-left">
-            <v-img src="@/assets/img/logo-luztopia.svg" height="35" contain position="left"></v-img>
+            <v-img src="@/assets/img/logo-luztopia.svg" height="50" contain position="left"></v-img>
           </v-col>
           <template v-if="countdown != false">
             <v-col class="text-center">
@@ -211,6 +211,7 @@
           <v-btn
             text
             @click="faq = false"
+            :ripple="false"
           >
             Cerrar
           </v-btn>
