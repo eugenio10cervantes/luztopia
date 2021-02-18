@@ -106,8 +106,8 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col class="py-0" style="background-color: #FF00EA;">
-              b
+            <v-col cols="6" class="py-0 px-0" style="background-color: #FF00EA;">
+              <v-img src="../assets/img/visitaelfestival-luztopia.gif" style="height: 100%"></v-img>
             </v-col>
           </v-row>
         </v-container>
