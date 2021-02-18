@@ -339,11 +339,11 @@
       <v-container fluid class="py-12" style="background-color: #0A0CFA;">
         <v-container>
           <v-row align="center">
-            <v-col cols="12" sm="6" lg="4">
+            <v-col cols="12" sm="6">
               <v-img src="../assets/img/cluster-turismo.png" max-width="316px" height="180" class="mx-auto" :contain="true"></v-img>
               <p class="white--text">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
             </v-col>
-            <v-col cols="12" sm="6" lg="6" offset-lg="2">
+            <v-col cols="12" sm="6">
               <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
               <span class="enfasis white--text d-block">PRESENTADO POR EL</span>
               <span class="enfasis color-rosa d-block">CLÚSTER DE TURISMO DE</span>
