@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'Futura Bold Condensed';
+	src: url('../fonts/Futura\ Bold\ Condensed.eot');
+	src: local('☺'), url('../fonts/Futura\ Bold\ Condensed.woff') format('woff'), url('../fonts/Futura\ Bold\ Condensed.ttf') format('truetype'), url('../fonts/Futura\ Bold\ Condensed.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.futura-bold{
+    font-family: 'Futura Bold Condensed';
+}
+
 #menu {
     .v-dialog__content {
         align-items: flex-start !important;
@@ -21,6 +33,44 @@
 
 .bold{
     font-weight: bold;
+}
+
+.titulo{
+    font-family: 'Futura Bold Condensed';
+    color: white;
+    font-size: 111px;
+}
+
+.subtitulo{
+    font-family: 'Futura Bold Condensed';
+    font-size: 17px;
+}
+
+.enfasis{
+    font-family: 'Futura Bold Condensed';
+    font-size: 61px;
+    line-height: 1;
+}
+
+.texto-corrido{
+    font-family: 'Futura Bold Condensed';
+    font-size: 22px;
+    line-height: 1;
+}
+
+.texto-corrido-enfasis{
+    font-family: 'Futura Bold Condensed';
+    font-size: 30px;
+    line-height: 1;
+}
+
+.lista-faq{
+    margin-top: 20px;
+    li{
+        font-family: 'Futura Bold Condensed';
+        font-size: 22px;
+        line-height: 1;
+    }
 }
 
 .menu-item {
