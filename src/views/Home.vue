@@ -63,7 +63,7 @@
       <div id="atracciones">
         <v-container fluid class="py-0">
           <v-row class="my-0">
-            <v-col cols="6" class="pt-0 pb-12" style="background-color: #1CEC17;">
+            <v-col cols="12" sm="6" class="pt-0 pb-12" style="background-color: #1CEC17;">
               <v-row style="min-height: 100vh" align="start">
                 <v-col>
                   <v-row>
@@ -106,7 +106,7 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="6" class="py-0 px-0" style="background-color: #FF00EA;">
+            <v-col cols="12" sm="6" class="py-0 px-0" style="background-color: #FF00EA;">
               <v-img src="../assets/img/visitaelfestival-luztopia.gif" style="height: 100%"></v-img>
             </v-col>
           </v-row>
@@ -281,7 +281,7 @@
               <span class="d-block color-rosa texto-corrido">
                 ¡SUMATE AL EQUIPO!
               </span>
-              <a class="d-block enfasis white--text" href="mailto:patrocinios@luztopia.mx">PATROCINIOS@LUZTOPIA.MX</a>
+              <a class=" enfasis white--text" href="mailto:patrocinios@luztopia.mx">PATROCINIOS@LUZTOPIA.MX</a>
             </v-col>
           </v-row>
         </v-container>
@@ -305,36 +305,37 @@
           </v-row>
         </v-container>
       </div> -->
+      <div class="d-none d-sm-block">
+        <v-container fluid style="background-color: #0A0CFA;">
+          <v-row>
+            <v-col class="text-right">
+              <h2 class="titulo">COMUNIDAD</h2>
+            </v-col>
+          </v-row>
 
-      <v-container fluid style="background-color: #0A0CFA;">
-        <v-row>
-          <v-col class="text-right">
-            <h2 class="titulo">COMUNIDAD</h2>
-          </v-col>
-        </v-row>
-
-        <v-row>
-          <v-col cols="3" class="px-0 text-center">
-            <v-img src="../assets/img/1.png" aspect-ratio="1"></v-img>
-            <span class="texto-corrido d-block color-rosa mt-3">OFRECER UNA ATRACCIÓN</span>
-            <span class="texto-corrido d-block color-rosa mb-3">NAVIDEÑA DE VANGUARDIA</span>
-          </v-col>
-          <v-col cols="3" class="px-0 text-center">
-            <v-img src="../assets/img/2.png" aspect-ratio="1"></v-img>
-            <span class="texto-corrido d-block color-rosa mt-3">FOMENTAR LA CONVIVENCIA</span>
-            <span class="texto-corrido d-block color-rosa mb-3">SANA ENTRE LA COMUNIDAD</span>
-          </v-col>
-          <v-col cols="3" class="px-0 text-center">
-            <v-img src="../assets/img/3.png" aspect-ratio="1"></v-img>
-            <span class="texto-corrido d-block color-rosa mt-3">ATRAER EL TURISMO</span>
-          </v-col>
-          <v-col cols="3" class="px-0 text-center">
-            <v-img src="../assets/img/4.png" aspect-ratio="1"></v-img>
-            <span class="texto-corrido d-block color-rosa mt-3">IMPULSAR LA ACTIVIDAD</span>
-            <span class="texto-corrido d-block color-rosa mb-3">ECONÓMICA</span>
-          </v-col>
-        </v-row>
-      </v-container>
+          <v-row>
+            <v-col cols="3" class="px-0 text-center">
+              <v-img src="../assets/img/1.png" aspect-ratio="1"></v-img>
+              <span class="texto-corrido d-block color-rosa mt-3">OFRECER UNA ATRACCIÓN</span>
+              <span class="texto-corrido d-block color-rosa mb-3">NAVIDEÑA DE VANGUARDIA</span>
+            </v-col>
+            <v-col cols="3" class="px-0 text-center">
+              <v-img src="../assets/img/2.png" aspect-ratio="1"></v-img>
+              <span class="texto-corrido d-block color-rosa mt-3">FOMENTAR LA CONVIVENCIA</span>
+              <span class="texto-corrido d-block color-rosa mb-3">SANA ENTRE LA COMUNIDAD</span>
+            </v-col>
+            <v-col cols="3" class="px-0 text-center">
+              <v-img src="../assets/img/3.png" aspect-ratio="1"></v-img>
+              <span class="texto-corrido d-block color-rosa mt-3">ATRAER EL TURISMO</span>
+            </v-col>
+            <v-col cols="3" class="px-0 text-center">
+              <v-img src="../assets/img/4.png" aspect-ratio="1"></v-img>
+              <span class="texto-corrido d-block color-rosa mt-3">IMPULSAR LA ACTIVIDAD</span>
+              <span class="texto-corrido d-block color-rosa mb-3">ECONÓMICA</span>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
 
       <v-container fluid class="py-12" style="background-color: #0A0CFA;">
         <v-container>
@@ -356,12 +357,12 @@
             </v-col>
           </v-row>
           <v-row align="center">
-            <v-col cols="6">
+            <v-col cols="12" sm="6">
               <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
               <span class="enfasis white--text d-block">PRODUCIDO POR</span>
               <span class="enfasis color-rosa d-block">CACAO PRODUCCIONES</span>
             </v-col>
-            <v-col cols="6">
+            <v-col cols="12" sm="6">
               <v-img src="../assets/img/cacao-producciones.png" max-width="297px" height="180" class="mx-auto" :contain="true"></v-img>
               <p class="white--text">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
             </v-col>

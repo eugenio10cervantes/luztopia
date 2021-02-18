@@ -7,7 +7,7 @@
             <v-img src="@/assets/img/logo-luztopia.svg" height="50" contain position="left"></v-img>
           </v-col>
           <template v-if="countdown != false">
-            <v-col class="text-center">
+            <v-col class="d-none d-sm-block text-center">
               <span class="bold uppercase roboto-condensed footer-text">¡Faltan {{ countdown }} días!</span>
             </v-col>
           </template>
