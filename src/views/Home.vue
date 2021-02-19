@@ -107,16 +107,19 @@
               </v-row>
             </v-col>
             <v-col cols="12" sm="6" class="py-0 px-0" style="background-color: #FF00EA;">
-              <v-img src="../assets/img/visitaelfestival-luztopia.gif" style="height: 100%"></v-img>
+              <v-img src="../assets/img/visitaelfestival-luztopia.gif" style="height: 100%" class="align-center text-center">
+              <span class="white--text enfasis">¡VISITA EL FESTIVAL DE LUCES NAVIDEÑAS MÁS GRANDE DE MÉXICO!</span>
+              </v-img>
             </v-col>
           </v-row>
         </v-container>
       </div>
 
-      <v-container fluid id="mapa" style="background-color: #FF00EA;">
+      <v-container fluid id="mapa" style="background-color: #0A0CFA;">
         <v-row>
           <v-col class="px-0 text-right">
-            <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img>
+            <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
+            <h2 class="titulo">MAPA</h2>
           </v-col>
         </v-row>
         <v-row>
@@ -144,7 +147,7 @@
             <v-col :key="'atracciones-'+a" cols="6" md="4" class="px-0 py-0">
               <v-hover v-slot="{ hover }">
                 <v-img :src="'https://luztopiacms.actstudio.xyz/'+atraccion.image.path" style="height: 100%">
-                  <div class="d-flex" v-if="hover" style="height: 100%; background-color: #FF00EA;">
+                  <div class="d-flex" v-if="hover" style="height: 100%; background-color: rgba(255,0,234,.8);">
                     <v-container fluid class="py-0">
                       <v-row class="ma-0" style="height: 100%;" align="center">
                         <v-col class="text-center py-0">
@@ -189,7 +192,7 @@
         </v-row>
 
         <v-container>
-          <v-row>
+          <v-row class="mb-12 pb-12" style="line-height: 1.1">
             <v-col cols="12" sm="4" class="white--text">
               <h3 class="texto-corrido-enfasis">¿Qué <span class="color-rosa">SI</span> puedo llevar?</h3>
               <ul class="lista-faq">
@@ -207,7 +210,7 @@
               </ul>
             </v-col>
             <v-col cols="12" sm="4" class="white--text">
-              <h3 class="mt-3 texto-corrido-enfasis">¿Qué <span class="color-rosa">NO</span> puedo llevar?</h3>
+              <h3 class="texto-corrido-enfasis">¿Qué <span class="color-rosa">NO</span> puedo llevar?</h3>
               <ul class="lista-faq">
                 <li>Armas de fuego o punzacortantes</li>
                 <li>Alimentos</li>
@@ -223,7 +226,7 @@
               </ul>
             </v-col>
             <v-col cols="12" sm="4" class="white--text texto-corrido-medium">
-              <h3 class="mt-3 color-rosa texto-corrido">¿Está preparado el evento para personas con discapacidad?</h3>
+              <h3 class="color-rosa texto-corrido">¿Está preparado el evento para personas con discapacidad?</h3>
               Sí.
 
               <h3 class="mt-3 color-rosa texto-corrido-medium">¿Rentan sillas de ruedas?</h3>
@@ -259,8 +262,8 @@
           <v-row align="center" class="py-12">
 
             <template v-for="(patrocinador, p) in patrocinadores">
-              <v-col :key="'sponsor-'+p" cols="6" md="3">
-                <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="60%" class="mx-auto" aspect-ratio="1"></v-img>
+              <v-col :key="'sponsor-'+p" cols="6" md="3" class="py-0 px-0">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="90%" class="mx-auto" aspect-ratio="1"></v-img>
               </v-col>
             </template>
           </v-row>
@@ -271,14 +274,14 @@
           </v-row>
           <v-row align="center" class="py-12">
             <template v-for="(consejero,c) in consejo">
-              <v-col :key="'consejero-'+c" cols="6" md="3">
-                <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="60%" class="mx-auto" aspect-ratio="1"></v-img>
+              <v-col :key="'consejero-'+c" cols="6" md="3" class="py-0 px-0">
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="90%" class="mx-auto" aspect-ratio="1"></v-img>
               </v-col>
             </template>
           </v-row>
-          <v-row>
+          <v-row class="mb-12 pb-12">
             <v-col class="text-center">
-              <span class="d-block color-rosa texto-corrido">
+              <span class="d-block color-rosa texto-corrido mb-4">
                 ¡SUMATE AL EQUIPO!
               </span>
               <a class=" enfasis white--text" href="mailto:patrocinios@luztopia.mx">PATROCINIOS@LUZTOPIA.MX</a>
@@ -342,7 +345,7 @@
           <v-row align="center">
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cluster-turismo.png" max-width="316px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
+              <p class="white--text" style="max-width: 440px; line-heign: 1.2;">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
             </v-col>
             <v-col cols="12" sm="6">
               <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
@@ -364,7 +367,7 @@
             </v-col>
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cacao-producciones.png" max-width="297px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
+              <p class="white--text" style="max-width: 440px; line-heign: 1.2;">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
             </v-col>
           </v-row>
         </v-container>
@@ -373,10 +376,10 @@
       <v-container fluid style="background-color: #1CEC17">
         <v-row>
           <v-col class="text-center py-12">
-            <span class="d-block texto-corrido color-rosa">CONTACTANOS:</span>
+            <span class="d-block texto-corrido color-rosa mb-4">CONTACTANOS:</span>
             <a href="mailto:hola@luztopia.mx" class="d-block white--text enfasis">HOLA@lUZTOPIA.MX</a>
 
-            <span class="d-block texto-corrido color-rosa mt-6">SIGUENOS EN:</span>
+            <span class="d-block texto-corrido color-rosa mt-6 mb-4">SIGUENOS EN:</span>
             <div class="white--text enfasis">
               <a href="https://www.instagram.com/luztopia/" class="white--text enfasis">INSTAGRAM</a> – <a href="mailto:hola@luztopia.mx" class="white--text enfasis">YOUTUBE</a>
             </div>
@@ -514,6 +517,7 @@ export default {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -1px;
+    line-height: .8;
 
     @media screen and (max-width: 599px){
       font-size: 26px;
