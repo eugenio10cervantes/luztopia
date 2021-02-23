@@ -165,20 +165,26 @@
         <v-row>
           <template v-for="(atraccion, a) in atracciones">
             <v-col :key="'atracciones-'+a" cols="6" md="4" class="px-0 py-0">
-              <v-hover v-slot="{ hover }">
+              <template v-if="atraccion.removeHover">
                 <v-img :src="'https://luztopiacms.actstudio.xyz/'+atraccion.image.path" style="height: 100%">
-                  <div class="d-flex" v-if="hover" style="height: 100%; background-color: rgba(255,0,234,.8);">
-                    <v-container fluid class="py-0">
-                      <v-row class="ma-0" style="height: 100%;" align="center">
-                        <v-col class="text-center py-0">
-                          <span class="white--text d-block atraccion-titulo">{{atraccion.name}}</span>
-                          <span class="white--text atraccion-descripcion">{{atraccion.description}}</span>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                  </div>
                 </v-img>
-              </v-hover>
+              </template>
+              <template v-else>
+                <v-hover v-slot="{ hover }">
+                  <v-img :src="'https://luztopiacms.actstudio.xyz/'+atraccion.image.path" style="height: 100%">
+                    <div class="d-flex" v-if="hover" style="height: 100%; background-color: rgba(255,0,234,.8);">
+                      <v-container fluid class="py-0">
+                        <v-row class="ma-0" style="height: 100%;" align="center">
+                          <v-col class="text-center py-0">
+                            <span class="white--text d-block atraccion-titulo">{{atraccion.name}}</span>
+                            <span class="white--text atraccion-descripcion">{{atraccion.description}}</span>
+                          </v-col>
+                        </v-row>
+                      </v-container>
+                    </div>
+                  </v-img>
+                </v-hover>
+              </template>
             </v-col>
           </template>
         </v-row>
