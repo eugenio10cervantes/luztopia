@@ -289,7 +289,7 @@
 
             <template v-for="(patrocinador, p) in patrocinadores">
               <v-col :key="'sponsor-'+p" cols="6" md="3" class="py-0 px-0">
-                <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="90%" class="mx-auto" aspect-ratio="1"></v-img>
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="90%" class="mx-auto"></v-img>
               </v-col>
             </template>
           </v-row>
@@ -301,7 +301,7 @@
           <v-row align="center" class="py-12">
             <template v-for="(consejero,c) in consejo">
               <v-col :key="'consejero-'+c" cols="6" md="3" class="py-0 px-0">
-                <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="90%" class="mx-auto" aspect-ratio="1"></v-img>
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="90%" class="mx-auto"></v-img>
               </v-col>
             </template>
           </v-row>
