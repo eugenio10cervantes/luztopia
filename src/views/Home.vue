@@ -156,10 +156,12 @@
         </v-row>
       </v-container>
 
-      <v-container fluid id="atracciones" style="background-color: #FF00EA;">
+      <v-container fluid id="atracciones" style="background-color: #e62ad0;">
         <v-row>
           <v-col class="px-0">
-            <v-img src="../assets/img/titulos/ATRACCIONES.svg" max-height="137" contain position="left"></v-img>
+            <!-- <v-img src="../assets/img/titulos/ATRACCIONES.svg" max-height="137" contain position="left"></v-img> -->
+
+            <h2 class="titulo">ATRACCIONES</h2>
           </v-col>
         </v-row>
         <v-row>
