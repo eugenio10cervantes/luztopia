@@ -50,11 +50,11 @@
             </template>
 
             <template v-if="home.coverMovil.video">
-              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none"></video>
+              <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" autoplay muted loop playsinline class="d-md-none" style="width: 100%;"></video>
             </template>
 
             <template v-if="home.coverMovil.image">
-              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" height="100vh" class="d-md-none"></v-img>
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.coverMovil.path" width="100%" class="d-md-none" contain></v-img>
             </template>
           </v-col>
         </v-row>
@@ -92,7 +92,7 @@
                     </v-col>
                   </v-row>
                   <v-row justify="center">
-                    <v-col cols="8">
+                    <v-col cols="10" sm="8">
                       <span class="d-block color-rosa subtitulo">NUEVA EDICIÓN:</span>
                       <span class="d-block white--text texto-corrido-enfasis">NAVIDAD EN EL ESPACIO</span>
 
@@ -276,7 +276,7 @@
 
       <v-container fluid id="patrocinadores" style="background-color: #0A0CFA;">
         <v-row>
-          <v-col class="py-0 px-0">
+          <v-col class="py-sm-0 py-0 pt-12 px-0">
             <!-- <v-img src="../assets/img/titulos/patrocinadores.svg" max-height="137" contain position="left"></v-img> -->
             <h2 class="titulo">PATROCINADORES Y ALIADOS</h2>
           </v-col>
@@ -400,7 +400,7 @@
       </v-container>
 
       <v-container fluid style="background-color: #1CEC17">
-        <v-row>
+        <v-row align="center" style="min-height: 450px;">
           <v-col class="text-center py-12">
             <span class="d-block texto-corrido color-rosa mb-4">CONTACTANOS:</span>
             <a href="mailto:hola@luztopia.mx" class="d-block white--text enfasis">HOLA@lUZTOPIA.MX</a>
