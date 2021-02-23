@@ -60,7 +60,27 @@
         </v-row>
       </v-container>
 
-      <div id="atracciones">
+      <div class="teaser" style="position: relative;">
+        <v-container fluid class="py-0">
+          <v-row>
+            <v-col class="py-0 px-0">
+              <video id="teaser" src="../assets/video/LUZTOPIA_2012-720.mp4" style="width: 100%" @ended="rewind();isPlaying = false"></video>
+            </v-col>
+          </v-row>
+        </v-container>
+        <template v-if="!isPlaying">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%)" class="text-center">
+            <span class="d-block white--text titulo">
+              #ENCIENDETULUZ
+            </span>
+            <v-btn icon outlined color="white" @click="playVideo">
+                <v-icon>mdi-play-outline</v-icon>
+            </v-btn>
+          </div>
+        </template>
+      </div>
+
+      <div id="atracciones" style="overflow: hidden;">
         <v-container fluid class="py-0">
           <v-row class="my-0">
             <v-col cols="12" sm="6" class="pt-0 pb-12" style="background-color: #1CEC17;">
@@ -417,7 +437,8 @@ export default {
       popup: {
       },
       terms: {
-      }
+      },
+      isPlaying: false
     }
   },
   computed: {
@@ -487,6 +508,17 @@ export default {
         aux.popup = data
         aux.dialog = aux.popup.active
       })
+  },
+  methods: {
+    playVideo: function () {
+      var vid = document.getElementById('teaser')
+      vid.play()
+      this.isPlaying = true
+    },
+    rewind: function () {
+      var vid = document.getElementById('teaser')
+      vid.currentTime = 0
+    }
   }
 }
 </script>
