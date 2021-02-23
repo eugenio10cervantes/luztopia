@@ -1,5 +1,5 @@
 <template>
-  <div class="home" style="padding-top: 64px">
+  <div class="home">
     <template v-if="loaded">
 
       <template v-if="dialog">
@@ -80,7 +80,7 @@
         </template>
       </div>
 
-      <div id="atracciones" style="overflow: hidden;">
+      <div style="overflow: hidden;">
         <v-container fluid class="py-0">
           <v-row class="my-0">
             <v-col cols="12" sm="6" class="pt-0 pb-12" style="background-color: #1CEC17;">
@@ -210,7 +210,7 @@
         </v-row>
       </v-container>
 
-      <v-container fluid style="background-color: #0A0CFA;">
+      <v-container id="faq" fluid style="background-color: #0A0CFA;">
         <v-row>
           <v-col class="text-right">
             <h2 class="titulo">PREGUNTAS FRECUENTES</h2>

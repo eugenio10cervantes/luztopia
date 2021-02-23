@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar fixed color="white" elevation="0" height="64px">
+    <v-app-bar fixed color="white" elevation="0" height="64px" app>
       <v-container fluid class="py-0">
         <v-row align="center">
           <v-col class="text-left">
@@ -119,8 +119,8 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    faq = true;
-                    dialog = false;
+                  dialog=false;
+                    $vuetify.goTo('#faq');
                   "
                 >
                   <span class="black--text menu-item">PREGUNTAS FREQUENTES</span>
@@ -142,83 +142,6 @@
             </v-row>
           </v-container>
         </v-card-text>
-      </v-card>
-    </v-dialog>
-
-    <v-dialog
-      v-model="faq"
-      max-width="800"
-    >
-      <v-card color="#0A0CFA" class="white--text text-right">
-        <div style="position: sticky; top: 0px; z-index: 1; right: 0px;">
-          <v-btn icon :ripple="false" @click="faq = false">
-            <v-icon color="#E62AD0">mdi-close</v-icon>
-          </v-btn>
-        </div>
-        <v-card-title>
-          <span class="headline mx-auto d-block">Preguntas Frecuentes</span>
-        </v-card-title>
-        <v-card-text class="white--text text-left">
-          <h3>¿Qué <span class="color-rosa">SÍ</span> puedo llevar?</h3>
-          <ul>
-            <li>Carreola estándar</li>
-            <li>Silla de ruedas</li>
-            <li>Bolsa y/o mochila estándar</li>
-            <li>Cámara</li>
-            <li>Selfie stick</li>
-            <li>Paraguas</li>
-            <li>Sombrero</li>
-            <li>Botella de agua</li>
-            <li>Alimentos y bebidas para bebé</li>
-            <li>Patines</li>
-            <li>Perros de servicio</li>
-          </ul>
-
-          <h3 class="mt-3">¿Qué <span class="color-rosa">NO</span> puedo llevar?</h3>
-          <ul>
-            <li>Armas de fuego o punzacortantes</li>
-            <li>Alimentos</li>
-            <li>Bebidas (excepto agua)</li>
-            <li>Sustancias ilegales o flamables</li>
-            <li>Pintura en aerosol, marcadores</li>
-            <li>Bicicleta, patineta, scooter</li>
-            <li>Mascotas</li>
-            <li>Pirotecnia</li>
-            <li>Displays publicitarios</li>
-            <li>Tripiés</li>
-            <li>Drones</li>
-          </ul>
-
-          <h3 class="mt-3 color-rosa bold">¿Está preparado el evento para personas con discapacidad?</h3>
-          Sí.
-
-          <h3 class="mt-3 color-rosa bold">¿Rentan sillas de ruedas?</h3>
-          Sí, cantidad limitada, sujeto a disponibilidad.
-
-          <h3 class="mt-3 color-rosa bold">¿Puedo accesar con mascotas?</h3>
-          No está permitido el acceso con mascotas. Solo se permite el acceso con perros de servicio con su arnés y se debe de presentar una carta médica en el acceso.
-
-          <h3 class="mt-3 color-rosa bold">¿Los niños pagan boleto?</h3>
-          Niños menores de 3 años no pagan.
-
-          <h3 class="mt-3 color-rosa bold">¿Aceptan pago con tarjeta?</h3>
-          Sí, tanto en la venta de boletos online como en taquilla se aceptan pagos con tarjeta de débito o crédito, Visa o Mastercard. No se acepta American Express.
-
-          <h3 class="mt-3 color-rosa bold">¿Puedo ir al Paseo Santa Lucía sin entrar a Luztopía?</h3>
-          Sí, puedes transitar con facilidad por los corredores externos.
-
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn
-            text
-            @click="faq = false"
-            :ripple="false"
-            color="#E62AD0"
-          >
-            Cerrar
-          </v-btn>
-        </v-card-actions>
       </v-card>
     </v-dialog>
 
