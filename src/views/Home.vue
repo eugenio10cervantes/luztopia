@@ -371,7 +371,7 @@
           <v-row align="center">
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cluster-turismo.png" max-width="316px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text" style="max-width: 440px; line-heign: 1.2;">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
+              <p class="white--text mx-auto" style="max-width: 440px; line-heign: 1.2;">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
             </v-col>
             <v-col cols="12" sm="6">
               <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
@@ -393,7 +393,7 @@
             </v-col>
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cacao-producciones.png" max-width="297px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text" style="max-width: 440px; line-heign: 1.2;">Agencia orgullosamente mexicana especializada en el diseño y producción de decoración urbana y atracciones de entretenimiento.</p>
+              <p class="white--text mx-auto" style="max-width: 440px; line-heign: 1.2;">Agencia orgullosamente mexicana especializada en el diseño y producción de decoración urbana y atracciones de entretenimiento.</p>
             </v-col>
           </v-row>
         </v-container>
