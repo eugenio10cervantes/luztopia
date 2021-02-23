@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar fixed color="transparent" elevation="0" dark height="64px">
+    <v-app-bar fixed color="white" elevation="0" height="64px">
       <v-container fluid class="py-0">
         <v-row align="center">
           <v-col class="text-left">
@@ -12,7 +12,7 @@
             </v-col>
           </template>
           <v-col class="text-right">
-            <v-btn icon dark :ripple="false" @click="dialog = true">
+            <v-btn icon color="black" :ripple="false" @click="dialog = true">
               <v-icon size="48">mdi-menu</v-icon>
             </v-btn>
           </v-col>

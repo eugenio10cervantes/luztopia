@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" style="padding-top: 64px">
     <template v-if="loaded">
 
       <template v-if="dialog">
@@ -46,7 +46,7 @@
               <video :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" autoplay muted loop playsinline class="d-none d-md-inline"></video>
             </template>
             <template v-if="home.cover.image">
-              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" width="100%" height="100vh" class="d-none d-md-flex" position="center bottom"></v-img>
+              <v-img :src="'https://luztopiacms.actstudio.xyz/storage/uploads'+home.cover.path" width="100%" height="calc(100vh - 64px)" class="d-none d-md-flex" position="center bottom"></v-img>
             </template>
 
             <template v-if="home.coverMovil.video">
@@ -100,14 +100,14 @@
                       <span class="d-block white--text texto-corrido">E10 - Fundidora, Calle Aramberri</span>
                       <span class="d-block white--text texto-corrido">E Salón de la Fama del Beisbol - Calle Gregorio Torres</span>
 
-                      <v-btn text color="white" :ripple="false">VER MAPA</v-btn>
+                      <v-btn text color="white" :ripple="false" href="https://goo.gl/maps/4mg9FQsd1Ljr9x1K7">VER UBICACIÓN</v-btn>
                     </v-col>
                   </v-row>
                 </v-col>
               </v-row>
             </v-col>
             <v-col cols="12" sm="6" class="py-0 px-0" style="background-color: #FF00EA;">
-              <v-img src="../assets/img/visitaelfestival-luztopia.gif" style="height: 100%" class="align-center text-center">
+              <v-img src="../assets/img/visita-luztopia-iconos.gif" style="height: 100%" class="align-center text-center">
               <span class="white--text enfasis">¡VISITA EL FESTIVAL DE LUCES NAVIDEÑAS MÁS GRANDE DE MÉXICO!</span>
               </v-img>
             </v-col>
@@ -279,14 +279,14 @@
               </v-col>
             </template>
           </v-row>
-          <v-row class="mb-12 pb-12">
+          <!-- <v-row class="mb-12 pb-12">
             <v-col class="text-center">
               <span class="d-block color-rosa texto-corrido mb-4">
                 ¡SUMATE AL EQUIPO!
               </span>
               <a class=" enfasis white--text" href="mailto:patrocinios@luztopia.mx">PATROCINIOS@LUZTOPIA.MX</a>
             </v-col>
-          </v-row>
+          </v-row> -->
         </v-container>
       </div>
 
@@ -367,7 +367,7 @@
             </v-col>
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cacao-producciones.png" max-width="297px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text" style="max-width: 440px; line-heign: 1.2;">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
+              <p class="white--text" style="max-width: 440px; line-heign: 1.2;">Agencia orgullosamente mexicana especializada en el diseño y producción de decoración urbana y atracciones de entretenimiento.</p>
             </v-col>
           </v-row>
         </v-container>
