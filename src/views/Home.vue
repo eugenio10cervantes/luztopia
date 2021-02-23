@@ -64,7 +64,7 @@
         <v-container fluid class="py-0">
           <v-row>
             <v-col class="py-0 px-0">
-              <video id="teaser" src="../assets/video/LUZTOPIA_2012-720.mp4" style="width: 100%" @ended="rewind();isPlaying = false"></video>
+              <video id="teaser" src="../assets/video/LUZTOPIA_2012-720.mp4" style="width: 100%" @ended="rewind();isPlaying = false" @click="pauseVideo()"></video>
             </v-col>
           </v-row>
         </v-container>
@@ -520,6 +520,11 @@ export default {
       var vid = document.getElementById('teaser')
       vid.play()
       this.isPlaying = true
+    },
+    pauseVideo: function () {
+      var vid = document.getElementById('teaser')
+      vid.pause()
+      this.isPlaying = false
     },
     rewind: function () {
       var vid = document.getElementById('teaser')
