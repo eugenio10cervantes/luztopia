@@ -80,10 +80,10 @@
         </template>
       </div>
 
-      <div style="overflow: hidden;">
-        <v-container fluid class="py-0">
+      <div style="overflow: hidden; position: relative;">
+        <v-container fluid class="py-0" >
           <v-row class="my-0">
-            <v-col cols="12" sm="6" class="pt-0 pb-12" style="background-color: #1CEC17;">
+            <v-col cols="12" sm="6" class="pt-0 pb-12" style="background-color: #1CEC17; height: 100%;">
               <v-row style="min-height: 100vh" align="start">
                 <v-col>
                   <v-row>
@@ -128,7 +128,7 @@
             </v-col>
             <v-col cols="12" sm="6" class="py-0 px-0" style="background-color: #FF00EA;">
               <v-img src="../assets/img/visita-luztopia-iconos.gif" style="height: 100%" class="align-center text-center">
-              <span class="white--text enfasis">¡VISITA EL FESTIVAL DE LUCES NAVIDEÑAS MÁS GRANDE DE MÉXICO!</span>
+                <span class="white--text enfasis">¡VISITA EL FESTIVAL DE LUCES NAVIDEÑAS MÁS GRANDE DE MÉXICO!</span>
               </v-img>
             </v-col>
           </v-row>
