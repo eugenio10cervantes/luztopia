@@ -80,7 +80,7 @@
         </template>
       </div>
 
-      <div style="overflow: hidden; position: relative;">
+      <div style="overflow: hidden; position: relative; background-color: #1CEC17;">
         <v-container fluid class="py-0" >
           <v-row class="my-0">
             <v-col cols="12" sm="6" class="pt-0 pb-12" style="background-color: #1CEC17; height: 100%;">
@@ -88,7 +88,7 @@
                 <v-col>
                   <v-row>
                     <v-col>
-                      <h2 class="titulo">INFORMACIÓN</h2>
+                      <h2 class="titulo pt-3 pt-sm-0">INFORMACIÓN</h2>
                     </v-col>
                   </v-row>
                   <v-row justify="center">
@@ -257,19 +257,19 @@
               <h3 class="color-rosa texto-corrido">¿Está preparado el evento para personas con discapacidad?</h3>
               Sí.
 
-              <h3 class="mt-3 color-rosa texto-corrido-medium">¿Rentan sillas de ruedas?</h3>
+              <h3 class="mt-3 color-rosa texto-corrido">¿Rentan sillas de ruedas?</h3>
               Sí, cantidad limitada, sujeto a disponibilidad.
 
-              <h3 class="mt-3 color-rosa texto-corrido-medium">¿Puedo accesar con mascotas?</h3>
+              <h3 class="mt-3 color-rosa texto-corrido">¿Puedo accesar con mascotas?</h3>
               No está permitido el acceso con mascotas. Solo se permite el acceso con perros de servicio con su arnés y se debe de presentar una carta médica en el acceso.
 
-              <h3 class="mt-3 color-rosa texto-corrido-medium">¿Los niños pagan boleto?</h3>
+              <h3 class="mt-3 color-rosa texto-corrido">¿Los niños pagan boleto?</h3>
               Niños menores de 3 años no pagan.
 
-              <h3 class="mt-3 color-rosa texto-corrido-medium">¿Aceptan pago con tarjeta?</h3>
+              <h3 class="mt-3 color-rosa texto-corrido">¿Aceptan pago con tarjeta?</h3>
               Sí, tanto en la venta de boletos online como en taquilla se aceptan pagos con tarjeta de débito o crédito, Visa o Mastercard. No se acepta American Express.
 
-              <h3 class="mt-3 color-rosa texto-corrido-medium">¿Puedo ir al Paseo Santa Lucía sin entrar a Luztopía?</h3>
+              <h3 class="mt-3 color-rosa texto-corrido">¿Puedo ir al Paseo Santa Lucía sin entrar a Luztopía?</h3>
               Sí, puedes transitar con facilidad por los corredores externos.
             </v-col>
           </v-row>
@@ -373,7 +373,7 @@
           <v-row align="center">
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cluster-turismo.png" max-width="316px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text mx-auto" style="max-width: 440px; line-heign: 1.2;">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
+              <p class="white--text mx-auto texto-descriptivo-empresas">Asociación Civil sin fin de lucro que agrupa a actores de la iniciativa privada, gobierno y universidades con el objetivo de impulsar la competitividad y la innovación de la industria turística de Nuevo León.</p>
             </v-col>
             <v-col cols="12" sm="6">
               <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
@@ -395,7 +395,7 @@
             </v-col>
             <v-col cols="12" sm="6">
               <v-img src="../assets/img/cacao-producciones.png" max-width="297px" height="180" class="mx-auto" :contain="true"></v-img>
-              <p class="white--text mx-auto" style="max-width: 440px; line-heign: 1.2;">Agencia orgullosamente mexicana especializada en el diseño y producción de decoración urbana y atracciones de entretenimiento.</p>
+              <p class="white--text mx-auto texto-descriptivo-empresas">Agencia orgullosamente mexicana especializada en el diseño y producción de decoración urbana y atracciones de entretenimiento.</p>
             </v-col>
           </v-row>
         </v-container>
