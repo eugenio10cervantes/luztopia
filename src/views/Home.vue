@@ -212,7 +212,7 @@
         </v-row>
       </v-container>
 
-      <v-container id="faq" fluid style="background-color: #0A0CFA;">
+      <v-container id="faq" fluid style="background-color: #1CEC17;">
         <v-row>
           <v-col class="text-right">
             <h2 class="titulo">PREGUNTAS FRECUENTES</h2>
@@ -290,7 +290,7 @@
           <v-row align="center" class="py-12">
 
             <template v-for="(patrocinador, p) in patrocinadores">
-              <v-col :key="'sponsor-'+p" cols="6" md="3" class="py-0 px-0">
+              <v-col :key="'sponsor-'+p" cols="6" md="2" class="py-0 px-0">
                 <v-img :src="'https://luztopiacms.actstudio.xyz/'+patrocinador.image.path" :contain="true" max-width="90%" class="mx-auto"></v-img>
               </v-col>
             </template>
@@ -302,7 +302,7 @@
           </v-row>
           <v-row align="center" class="py-12">
             <template v-for="(consejero,c) in consejo">
-              <v-col :key="'consejero-'+c" cols="6" md="3" class="py-0 px-0">
+              <v-col :key="'consejero-'+c" cols="6" md="2" class="py-0 px-0">
                 <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="90%" class="mx-auto"></v-img>
               </v-col>
             </template>
