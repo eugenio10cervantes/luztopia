@@ -106,11 +106,11 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    $vuetify.goTo('#consejo');
+                    $vuetify.goTo('#comunidad');
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">CONSEJO</span>
+                  <span class="black--text menu-item">COMUNIDAD</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">

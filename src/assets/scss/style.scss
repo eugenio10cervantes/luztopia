@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'Futura Bold Condensed';
-	src: url('../fonts/Futura\ Bold\ Condensed.eot');
-	src: local('☺'), url('../fonts/Futura\ Bold\ Condensed.woff') format('woff'), url('../fonts/Futura\ Bold\ Condensed.ttf') format('truetype'), url('../fonts/Futura\ Bold\ Condensed.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Futura Bold Condensed';
+    src: url('../fonts/Futura\ Bold\ Condensed.eot');
+    src: local('☺'), url('../fonts/Futura\ Bold\ Condensed.woff') format('woff'), url('../fonts/Futura\ Bold\ Condensed.ttf') format('truetype'), url('../fonts/Futura\ Bold\ Condensed.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.futura-bold{
+.futura-bold {
     font-family: 'Futura Bold Condensed';
 }
 
@@ -21,83 +21,91 @@
         margin-right: 0px !important;
         height: 350px;
 
-        @media screen and (max-width: 599px){
+        @media screen and (max-width: 599px) {
             height: 100vh;
         }
     }
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.titulo{
+.not-text-decoration {
+    text-decoration: none !important;
+}
+
+.titulo {
     font-family: 'Futura Bold Condensed';
     color: white;
     font-size: 111px;
     letter-spacing: -5.8px;
 
-    @media screen and (max-width: 599px){
+    @media screen and (max-width: 599px) {
         font-size: 35px;
         line-height: 1;
         letter-spacing: -1px;
     }
 }
 
-.subtitulo{
+.subtitulo {
     font-family: 'Futura Bold Condensed';
     font-size: 17px;
 }
 
-.enfasis{
+.enfasis {
     font-family: 'Futura Bold Condensed';
     font-size: 61px;
     line-height: 1;
-    @media screen and (max-width: 599px){
+
+    @media screen and (max-width: 599px) {
         font-size: 30px;
     }
 }
 
-.texto-corrido{
+.texto-corrido {
     font-family: 'Futura Bold Condensed';
     font-size: 22px;
     line-height: 1;
-    @media screen and (max-width: 599px){
+
+    @media screen and (max-width: 599px) {
         font-size: 14px;
     }
 }
 
-.texto-corrido-enfasis{
+.texto-corrido-enfasis {
     font-family: 'Futura Bold Condensed';
     font-size: 30px;
     line-height: 1;
 
-    @media screen and (max-width: 599px){
+    @media screen and (max-width: 599px) {
         font-size: 22px;
     }
 }
 
-.texto-descriptivo-empresas{
+.texto-descriptivo-empresas {
     max-width: 440px;
     line-height: 1.2;
 
-    @media screen and (max-width: 599px){
+    @media screen and (max-width: 599px) {
         font-size: 14px;
         line-height: 1.3;
     }
 }
 
-.lista-faq{
+.lista-faq {
     margin-top: 20px;
-    li{
+
+    li {
         font-family: 'Futura Bold Condensed';
         font-size: 22px;
         line-height: 1;
-        @media screen and (max-width: 599px){
+
+        @media screen and (max-width: 599px) {
             font-size: 14px;
         }
     }
@@ -109,34 +117,67 @@
     font-weight: bold;
     letter-spacing: -1px;
 
-    @media screen and (max-width: 599px){
+    @media screen and (max-width: 599px) {
         font-size: 34px;
     }
 
-    &:hover{
+    &:hover {
         text-decoration: underline;
     }
 }
 
-.footer-link{
+.footer-link {
     font-size: 18px;
     letter-spacing: -1px;
 
-    @media screen and(max-width: 599px){
+    @media screen and(max-width: 599px) {
         font-size: 16px;
     }
 }
 
-.footer-text{
+.footer-text {
     font-size: 32px;
     letter-spacing: -1px;
     font-weight: bold;
-    
-    @media screen and(max-width: 599px){
+
+    @media screen and(max-width: 599px) {
         font-size: 22px;
     }
 }
 
-.color-rosa{
+.color-rosa {
     color: #E62AD0 !important;
+}
+
+.padding-custom-1 {
+    @media screen and (max-width: 2300px) {
+        padding-left: 135px !important;
+    }
+
+    @media screen and(max-width: 1904px){
+        padding-left: 12px !important;
+    }
+}
+
+.padding-custom-2 {
+    @media screen and (max-width: 2300px) {
+        padding-right: 425px !important;
+    }
+
+    @media screen and(max-width: 1904px) {
+        padding-right: 12px !important;
+    }
+}
+
+.cover-lutopia{
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.7);
+    }
 }
