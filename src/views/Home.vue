@@ -638,17 +638,17 @@
 
             <v-row>
               <v-col cols="12" class="pa-0">
-                <v-carousel hide-delimiters :show-arrows="false">
+                <v-carousel hide-delimiters :show-arrows="false" cycle interval="3000">
                   <v-carousel-item>
                     <v-card color="transparent" elevation="0" tile class="text-center">
                       <v-img
                         src="../assets/img/1-atraxiondevanguardia-LUZTOPIA.jpg"
                         aspect-ratio="1"
                       ></v-img>
-                      <span class="texto-corrido d-block color-rosa mt-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mt-3"
                         >OFRECER UNA ATRACCIÓN</span
                       >
-                      <span class="texto-corrido d-block color-rosa mb-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mb-3"
                         >NAVIDEÑA DE VANGUARDIA</span
                       >
                     </v-card>
@@ -659,10 +659,10 @@
                         src="../assets/img/2-convivenciasana-LUZTOPIA.jpg"
                         aspect-ratio="1"
                       ></v-img>
-                      <span class="texto-corrido d-block color-rosa mt-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mt-3"
                         >FOMENTAR LA CONVIVENCIA</span
                       >
-                      <span class="texto-corrido d-block color-rosa mb-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mb-3"
                         >SANA ENTRE LA COMUNIDAD</span
                       >
                     </v-card>
@@ -673,7 +673,7 @@
                         src="../assets/img/3-turismo-LUZTOPIA.jpg"
                         aspect-ratio="1"
                       ></v-img>
-                      <span class="texto-corrido d-block color-rosa mt-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mt-3"
                         >ATRAER EL TURISMO</span
                       >
                     </v-card>
@@ -684,10 +684,10 @@
                         src="../assets/img/4-actividadeconomica-LUZTOPIA.jpg"
                         aspect-ratio="1"
                       ></v-img>
-                      <span class="texto-corrido d-block color-rosa mt-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mt-3"
                         >IMPULSAR LA ACTIVIDAD</span
                       >
-                      <span class="texto-corrido d-block color-rosa mb-3"
+                      <span class="texto-corrido rewrite-in-sm d-block color-rosa mb-3"
                         >ECONÓMICA</span
                       >
                     </v-card>
