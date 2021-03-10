@@ -58,7 +58,17 @@
               </v-col>
               <v-col cols="auto" class="py-5">
                 <v-btn text :ripple="false" color="transparent">
-                  <span class="black--text menu-item">COMPRA TUS BOLETOS</span>
+                  <v-btn
+                  text
+                  :ripple="false"
+                  color="transparent"
+                  @click="
+                    $vuetify.goTo('#teaser');
+                    dialog = false;
+                  "
+                >
+                  <span class="black--text menu-item">VIDEO</span>
+                </v-btn>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">
@@ -111,6 +121,21 @@
                   "
                 >
                   <span class="black--text menu-item">PREGUNTAS FREQUENTES</span>
+                </v-btn>
+              </v-col>
+              <v-col cols="auto" class="py-5">
+                <v-btn text :ripple="false" color="transparent">
+                  <v-btn
+                  text
+                  :ripple="false"
+                  color="transparent"
+                  @click="
+                  dialog=false;
+                    $vuetify.goTo('#boletos');
+                  "
+                >
+                  <span class="black--text menu-item">VENTA DE BOLETOS</span>
+                </v-btn>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">

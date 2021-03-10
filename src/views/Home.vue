@@ -34,7 +34,7 @@
         </v-dialog>
       </template>
 
-      <v-container fluid class="intro py-0">
+      <v-container id="video" fluid class="intro py-0">
         <v-row class="my-0">
           <v-col class="px-0 py-0">
             <template v-if="home.cover.video">
@@ -493,7 +493,7 @@
         </v-container>
       </v-container>
 
-      <v-container fluid id="patrocinadores" style="background-color: #0a0cfa">
+      <v-container fluid id="patrocinadores" style="background-color: #e62ad0">
         <v-row>
           <v-col class="py-sm-0 py-0 pt-12 px-0">
             <!-- <v-img src="../assets/img/titulos/patrocinadores.svg" max-height="137" contain position="left"></v-img> -->
@@ -502,7 +502,7 @@
         </v-row>
       </v-container>
 
-      <div style="background-color: #0a0cfa">
+      <div style="background-color: #e62ad0">
         <v-container>
           <v-row align="center" class="py-12">
             <template v-for="(patrocinador, p) in patrocinadores">
