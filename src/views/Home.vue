@@ -135,9 +135,7 @@
         </template>
       </div>
 
-      <div
-        style="overflow: hidden; position: relative; background-color: #1cec17"
-      >
+      <div id="informacion" style="overflow: hidden; position: relative; background-color: #1cec17">
         <v-container fluid class="py-0">
           <v-row class="my-0">
             <v-col
@@ -593,6 +591,15 @@
               </v-col>
               <v-col cols="3" class="px-0 text-center">
                 <v-img
+                  src="../assets/img/3-turismo-LUZTOPIA.jpg"
+                  aspect-ratio="1"
+                ></v-img>
+                <span class="texto-corrido d-block color-rosa mt-3"
+                  >ATRAER EL TURISMO</span
+                >
+              </v-col>
+              <v-col cols="3" class="px-0 text-center">
+                <v-img
                   src="../assets/img/2-convivenciasana-LUZTOPIA.jpg"
                   aspect-ratio="1"
                 ></v-img>
@@ -601,15 +608,6 @@
                 >
                 <span class="texto-corrido d-block color-rosa mb-3"
                   >SANA ENTRE LA COMUNIDAD</span
-                >
-              </v-col>
-              <v-col cols="3" class="px-0 text-center">
-                <v-img
-                  src="../assets/img/3-turismo-LUZTOPIA.jpg"
-                  aspect-ratio="1"
-                ></v-img>
-                <span class="texto-corrido d-block color-rosa mt-3"
-                  >ATRAER EL TURISMO</span
                 >
               </v-col>
               <v-col cols="3" class="px-0 text-center">
@@ -823,7 +821,7 @@
         </v-container>
       </v-container>
 
-      <v-container fluid style="background-color: #1cec17">
+      <v-container id="footer" fluid style="background-color: #1cec17">
         <v-row align="center" style="min-height: 450px">
           <v-col class="text-center py-12">
             <span class="d-block texto-corrido color-rosa mb-4"

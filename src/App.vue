@@ -67,11 +67,11 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    $vuetify.goTo('#atracciones');
+                    $vuetify.goTo('#informacion');
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">ATRACCIONES</span>
+                  <span class="black--text menu-item">INFORMACIÓN</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">
@@ -85,6 +85,32 @@
                   "
                 >
                   <span class="black--text menu-item">MAPA</span>
+                </v-btn>
+              </v-col>
+              <v-col cols="auto" class="py-5">
+                <v-btn
+                  text
+                  :ripple="false"
+                  color="transparent"
+                  @click="
+                    $vuetify.goTo('#atracciones');
+                    dialog = false;
+                  "
+                >
+                  <span class="black--text menu-item">ATRACCIONES</span>
+                </v-btn>
+              </v-col>
+              <v-col cols="auto" class="py-5">
+                <v-btn
+                  text
+                  :ripple="false"
+                  color="transparent"
+                  @click="
+                  dialog=false;
+                    $vuetify.goTo('#faq');
+                  "
+                >
+                  <span class="black--text menu-item">PREGUNTAS FREQUENTES</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">
@@ -119,19 +145,6 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                  dialog=false;
-                    $vuetify.goTo('#faq');
-                  "
-                >
-                  <span class="black--text menu-item">PREGUNTAS FREQUENTES</span>
-                </v-btn>
-              </v-col>
-              <v-col cols="auto" class="py-5">
-                <v-btn
-                  text
-                  :ripple="false"
-                  color="transparent"
-                  @click="
                     $vuetify.goTo('#footer');
                     dialog = false;
                   "
@@ -149,7 +162,7 @@
       <router-view />
     </v-main>
 
-    <v-footer id="footer" color="white">
+    <v-footer color="white">
       <v-container fluid>
         <v-row align="center">
           <v-col cols="12" md="4" class="text-center text-md-left">
