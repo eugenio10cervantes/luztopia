@@ -3,15 +3,15 @@
     <v-app-bar fixed color="white" elevation="0" height="64px" app>
       <v-container fluid class="py-0">
         <v-row align="center">
-          <v-col class="text-left">
+          <v-col cols="6" sm="3" lg="4" class="text-left">
             <v-img src="@/assets/img/logo-luztopia.svg" height="50" contain position="left"></v-img>
           </v-col>
           <template v-if="countdown != false">
-            <v-col class="d-none d-sm-block text-center">
+            <v-col cols="4" sm="6" lg="4" class="d-none d-sm-block text-center">
               <span class="bold uppercase roboto-condensed footer-text">¡Faltan {{ countdown }} días!</span>
             </v-col>
           </template>
-          <v-col class="text-right">
+          <v-col cols="6" sm="3" lg="4" class="text-right">
             <v-btn icon color="black" :ripple="false" @click="dialog = true">
               <v-icon size="48">mdi-menu</v-icon>
             </v-btn>
@@ -120,7 +120,7 @@
                     $vuetify.goTo('#faq');
                   "
                 >
-                  <span class="black--text menu-item">PREGUNTAS FREQUENTES</span>
+                  <span class="black--text menu-item">FAQs</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">
@@ -197,18 +197,18 @@
               >CONTACTANOS</a
             >
           </v-col> -->
-          <v-col cols="12" md="4" class="text-center text-md-center">
+          <v-col cols="12" md="12" class="text-center text-md-center">
             <span class="roboto-condensed footer-text"
               >NOS VEMOS PRONTO :)</span
             >
           </v-col>
-          <v-col cols="12" md="4" class="text-center text-md-right">
+          <!-- <v-col cols="12" md="4" class="text-center text-md-right">
             <router-link
               to="/terminos-y-condiciones"
               class="black--text not-decorated roboto-condensed footer-link"
               >TERMINOS Y CONDICIONES</router-link
             >
-          </v-col>
+          </v-col> -->
         </v-row>
       </v-container>
     </v-footer>

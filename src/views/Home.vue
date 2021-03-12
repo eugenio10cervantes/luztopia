@@ -412,7 +412,7 @@
       <v-container id="faq" fluid style="background-color: #1cec17">
         <v-row>
           <v-col class="text-right">
-            <h2 class="titulo">PREGUNTAS FRECUENTES</h2>
+            <h2 class="titulo">FAQs</h2>
           </v-col>
         </v-row>
 
@@ -757,8 +757,8 @@
             target="_blank"
             class="not-text-decoration"
           >
-            <v-row align="center">
-              <v-col cols="12" sm="6">
+            <v-row align="center" justify="center">
+              <v-col cols="12" sm="10" md="6">
                 <v-img
                   src="../assets/img/cluster-turismo.png"
                   max-width="316px"
@@ -773,7 +773,7 @@
                   turística de Nuevo León.
                 </p>
               </v-col>
-              <v-col cols="12" sm="6">
+              <v-col cols="12" sm="10" md="6">
                 <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
                 <span class="enfasis white--text d-block"
                   >PRESENTADO POR EL</span
@@ -799,15 +799,15 @@
             target="_blank"
             class="not-text-decoration"
           >
-            <v-row align="center">
-              <v-col cols="12" sm="6" class="padding-custom-1">
+            <v-row align="center" justify="center">
+              <v-col cols="12" sm="10" md="6" class="padding-custom-1">
                 <span class="enfasis white--text d-block">EL FESTIVAL ES</span>
                 <span class="enfasis white--text d-block">PRODUCIDO POR</span>
                 <span class="enfasis color-rosa d-block"
                   >CACAO PRODUCCIONES</span
                 >
               </v-col>
-              <v-col cols="12" sm="6" class="padding-custom-2">
+              <v-col cols="12" sm="10" md="6" class="padding-custom-2">
                 <v-img
                   src="../assets/img/cacao-producciones.png"
                   max-width="297px"
