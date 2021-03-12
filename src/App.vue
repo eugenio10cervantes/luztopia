@@ -81,7 +81,7 @@
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">INFORMACIÓN</span>
+                  <span class="black--text menu-item">INFO</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-5">
@@ -190,13 +190,13 @@
     <v-footer color="white">
       <v-container fluid>
         <v-row align="center">
-          <v-col cols="12" md="4" class="text-center text-md-left">
+          <!-- <v-col cols="12" md="4" class="text-center text-md-left">
             <a
               href="mailto:luztopia@luztopia.com"
               class="black--text not-decorated roboto-condensed footer-link"
               >CONTACTANOS</a
             >
-          </v-col>
+          </v-col> -->
           <v-col cols="12" md="4" class="text-center text-md-center">
             <span class="roboto-condensed footer-text"
               >NOS VEMOS PRONTO :)</span

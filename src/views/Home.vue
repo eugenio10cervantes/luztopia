@@ -93,14 +93,14 @@
         </v-row>
       </v-container>
 
-      <div class="teaser" style="position: relative">
+      <div class="teaser" style="position: relative; background-color: black">
         <v-container fluid class="py-0">
           <v-row>
             <v-col class="py-0 px-0">
               <video
                 id="teaser"
                 src="../assets/video/LUZTOPIA_2012-720.mp4"
-                style="width: 100%"
+                style="width: 100%; object-fit: contain"
                 @ended="
                   rewind();
                   isPlaying = false;
@@ -148,7 +148,7 @@
                 <v-col>
                   <v-row>
                     <v-col>
-                      <h2 class="titulo pt-3 pt-sm-0">INFORMACIÓN</h2>
+                      <h2 class="titulo pt-3 pt-sm-0">INFO</h2>
                     </v-col>
                   </v-row>
                   <v-row justify="center">
@@ -488,6 +488,12 @@
                 ¿Puedo ir al Paseo Santa Lucía sin entrar a Luztopía?
               </h3>
               Sí, puedes transitar con facilidad por los corredores externos.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Aplicarán acciones de prevención Covid-19?
+              </h3>
+              Sí, en Luztopía estamos conscientes de la importancia de la prevención en esta contingencia ocasionada por el COVID-19; lo más importante es la salud y bienestar de nuestros visitantes y comunidad, por ello, tomaremos las medidas necesarias y sugeridas al momento por la Secretaría de Salud NL.
+
             </v-col>
           </v-row>
         </v-container>
