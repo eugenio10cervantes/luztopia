@@ -148,7 +148,7 @@
                 <v-col>
                   <v-row>
                     <v-col>
-                      <h2 class="titulo pt-3 pt-sm-0">INFO</h2>
+                      <h2 class="titulo pt-3 pt-sm-0 mt-4">INFO</h2>
                     </v-col>
                   </v-row>
                   <v-row justify="center">
@@ -503,7 +503,7 @@
         <v-row>
           <v-col class="py-sm-0 py-0 pt-12 px-0">
             <!-- <v-img src="../assets/img/titulos/patrocinadores.svg" max-height="137" contain position="left"></v-img> -->
-            <h2 class="titulo">PATROCINADORES Y ALIADOS</h2>
+            <h2 class="titulo mt-4">PATROCINADORES Y ALIADOS</h2>
           </v-col>
         </v-row>
       </v-container>
@@ -578,7 +578,7 @@
           <v-container fluid style="background-color: #0a0cfa">
             <v-row>
               <v-col class="text-right">
-                <h2 class="titulo">COMUNIDAD</h2>
+                <h2 class="titulo mt-4">COMUNIDAD</h2>
               </v-col>
             </v-row>
 
@@ -636,7 +636,7 @@
           <v-container fluid style="background-color: #0a0cfa">
             <v-row>
               <v-col class="text-right">
-                <h2 class="titulo">COMUNIDAD</h2>
+                <h2 class="titulo mt-4">COMUNIDAD</h2>
               </v-col>
             </v-row>
 
