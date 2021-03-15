@@ -58,8 +58,18 @@
                 "
                 width="100%"
                 height="calc(100vh - 64px)"
-                class="d-none d-md-flex"
+                class="d-none d-lg-flex"
                 position="center bottom"
+              ></v-img>
+              <v-img
+                :src="
+                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
+                  home.cover.path
+                "
+                width="100%"
+                class="d-none d-md-flex d-lg-none"
+                position="center bottom"
+                contain
               ></v-img>
             </template>
 
@@ -1007,7 +1017,14 @@ h2 {
   font-size: 141px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) and (max-width: 1263px) {
+  video {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1264px) {
   video {
     width: 100%;
     height: calc(100vh - 59px);
