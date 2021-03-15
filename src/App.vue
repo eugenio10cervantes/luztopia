@@ -12,6 +12,15 @@
             </v-col>
           </template>
           <v-col cols="6" sm="3" lg="4" class="text-right">
+            <v-btn icon href="https://www.facebook.com/luztopia" target="_blank" class="d-none d-md-inline-flex">
+              <v-icon size="28">mdi-facebook</v-icon>
+            </v-btn>
+            <v-btn icon href="https://www.instagram.com/luztopia/" target="_blank" class="d-none d-md-inline-flex">
+              <v-icon size="28">mdi-instagram</v-icon>
+            </v-btn>
+            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex">
+              <v-icon size="28">mdi-twitter</v-icon>
+            </v-btn>
             <v-btn icon color="black" :ripple="false" @click="dialog = true">
               <v-icon size="48">mdi-menu</v-icon>
             </v-btn>
