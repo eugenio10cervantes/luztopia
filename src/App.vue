@@ -12,14 +12,17 @@
             </v-col>
           </template>
           <v-col cols="6" sm="3" lg="4" class="text-right">
-            <v-btn icon href="https://www.facebook.com/luztopia" target="_blank" class="d-none d-md-inline-flex">
+            <v-btn icon href="https://www.facebook.com/luztopia" target="_blank" class="d-none d-md-inline-flex" width="36">
               <v-icon size="28">mdi-facebook</v-icon>
             </v-btn>
-            <v-btn icon href="https://www.instagram.com/luztopia/" target="_blank" class="d-none d-md-inline-flex">
+            <v-btn icon href="https://www.instagram.com/luztopia/" target="_blank" class="d-none d-md-inline-flex" width="36">
               <v-icon size="28">mdi-instagram</v-icon>
             </v-btn>
-            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex mr-3 ">
+            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex" width="36">
               <v-icon size="28">mdi-twitter</v-icon>
+            </v-btn>
+            <v-btn icon href="https://www.youtube.com/channel/UC8Hi8cyOM5Nw_3nlY21wNQw" target="_blank" class="d-none d-md-inline-flex" width="36">
+              <v-icon size="28">mdi-youtube</v-icon>
             </v-btn>
             <v-btn icon color="black" :ripple="false" @click="dialog = true">
               <v-icon size="48">mdi-menu</v-icon>
@@ -143,7 +146,7 @@
                     $vuetify.goTo('#boletos');
                   "
                 >
-                  <span class="black--text menu-item">VENTA DE BOLETOS</span>
+                  <span class="black--text menu-item">BOLETOS</span>
                 </v-btn>
                 </v-btn>
               </v-col>
