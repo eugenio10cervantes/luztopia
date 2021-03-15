@@ -846,7 +846,7 @@
             <a
               href="mailto:hola@luztopia.mx"
               class="d-block white--text enfasis"
-              >HOLA@lUZTOPIA.MX</a
+              >HOLA@LUZTOPIA.MX</a
             >
 
             <span class="d-block texto-corrido color-rosa mt-6 mb-4"

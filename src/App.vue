@@ -18,7 +18,7 @@
             <v-btn icon href="https://www.instagram.com/luztopia/" target="_blank" class="d-none d-md-inline-flex">
               <v-icon size="28">mdi-instagram</v-icon>
             </v-btn>
-            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex mr-3">
+            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex mr-3 ">
               <v-icon size="28">mdi-twitter</v-icon>
             </v-btn>
             <v-btn icon color="black" :ripple="false" @click="dialog = true">
@@ -52,7 +52,7 @@
             </v-row>
 
             <v-row justify="center" class="my-9 my-md-9">
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -65,7 +65,7 @@
                   <span class="black--text menu-item">INICIO</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn text :ripple="false" color="transparent">
                   <v-btn
                   text
@@ -80,7 +80,7 @@
                 </v-btn>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -93,7 +93,7 @@
                   <span class="black--text menu-item">INFO</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -106,7 +106,7 @@
                   <span class="black--text menu-item">MAPA</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -119,7 +119,7 @@
                   <span class="black--text menu-item">ATRACCIONES</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -132,7 +132,7 @@
                   <span class="black--text menu-item">FAQs</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn text :ripple="false" color="transparent">
                   <v-btn
                   text
@@ -147,7 +147,7 @@
                 </v-btn>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -160,7 +160,7 @@
                   <span class="black--text menu-item">PATROCINADORES</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -173,7 +173,7 @@
                   <span class="black--text menu-item">COMUNIDAD</span>
                 </v-btn>
               </v-col>
-              <v-col cols="auto" class="py-5">
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
