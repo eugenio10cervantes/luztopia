@@ -135,7 +135,7 @@
               left: 50%;
               transform: translateX(-50%) translateY(-50%);
             "
-            class="text-center"
+            class="text-center play-container"
           >
             <span class="d-block white--text titulo"> #ENCIENDETULUZ </span>
             <v-btn icon color="white" @click="playVideo">

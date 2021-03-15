@@ -18,7 +18,7 @@
             <v-btn icon href="https://www.instagram.com/luztopia/" target="_blank" class="d-none d-md-inline-flex">
               <v-icon size="28">mdi-instagram</v-icon>
             </v-btn>
-            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex">
+            <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex mr-3">
               <v-icon size="28">mdi-twitter</v-icon>
             </v-btn>
             <v-btn icon color="black" :ripple="false" @click="dialog = true">
