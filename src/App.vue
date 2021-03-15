@@ -13,16 +13,16 @@
           </template>
           <v-col cols="6" sm="3" lg="4" class="text-right">
             <v-btn icon href="https://www.facebook.com/luztopia" target="_blank" class="d-none d-md-inline-flex" width="36">
-              <v-icon size="28">mdi-facebook</v-icon>
+              <v-icon size="24">mdi-facebook</v-icon>
             </v-btn>
             <v-btn icon href="https://www.instagram.com/luztopia/" target="_blank" class="d-none d-md-inline-flex" width="36">
-              <v-icon size="28">mdi-instagram</v-icon>
+              <v-icon size="24">mdi-instagram</v-icon>
             </v-btn>
             <v-btn icon href="https://twitter.com/luztopia" target="_blank" class="d-none d-md-inline-flex" width="36">
-              <v-icon size="28">mdi-twitter</v-icon>
+              <v-icon size="24">mdi-twitter</v-icon>
             </v-btn>
             <v-btn icon href="https://www.youtube.com/channel/UC8Hi8cyOM5Nw_3nlY21wNQw" target="_blank" class="d-none d-md-inline-flex" width="36">
-              <v-icon size="28">mdi-youtube</v-icon>
+              <v-icon size="24">mdi-youtube</v-icon>
             </v-btn>
             <v-btn icon color="black" :ripple="false" @click="dialog = true">
               <v-icon size="48">mdi-menu</v-icon>
