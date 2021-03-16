@@ -269,44 +269,6 @@
         </v-container>
       </div>
 
-      <v-container fluid id="mapa" style="background-color: #0a0cfa">
-        <v-row>
-          <v-col class="px-0 text-right">
-            <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
-            <h2 class="titulo">MAPA</h2>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col class="px-0">
-            <v-img
-              :src="'https://luztopiacms.actstudio.xyz/' + home.mapa.path"
-              class="d-none d-md-flex"
-            ></v-img>
-            <v-img
-              :src="'https://luztopiacms.actstudio.xyz/' + home.mapaMovil.path"
-              class="d-md-none"
-            ></v-img>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col class="px-0 py-0">
-            <v-img
-              :src="
-                'https://luztopiacms.actstudio.xyz/' +
-                home.iconosMapaDesktop.path
-              "
-              class="d-none d-md-flex"
-            ></v-img>
-            <v-img
-              :src="
-                'https://luztopiacms.actstudio.xyz/' + home.iconosMapaMovil.path
-              "
-              class="d-md-none"
-            ></v-img>
-          </v-col>
-        </v-row>
-      </v-container>
-
       <v-container fluid id="atracciones" style="background-color: #e62ad0">
         <v-row>
           <v-col class="px-0">
@@ -415,6 +377,44 @@
                 width="100%"
               ></v-img>
             </template>
+          </v-col>
+        </v-row>
+      </v-container>
+
+      <v-container fluid id="mapa" style="background-color: #e62ad0">
+        <v-row>
+          <v-col class="px-0 text-right">
+            <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
+            <h2 class="titulo">MAPA</h2>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="px-0">
+            <v-img
+              :src="'https://luztopiacms.actstudio.xyz/' + home.mapa.path"
+              class="d-none d-md-flex"
+            ></v-img>
+            <v-img
+              :src="'https://luztopiacms.actstudio.xyz/' + home.mapaMovil.path"
+              class="d-md-none"
+            ></v-img>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="px-0 py-0">
+            <v-img
+              :src="
+                'https://luztopiacms.actstudio.xyz/' +
+                home.iconosMapaDesktop.path
+              "
+              class="d-none d-md-flex"
+            ></v-img>
+            <v-img
+              :src="
+                'https://luztopiacms.actstudio.xyz/' + home.iconosMapaMovil.path
+              "
+              class="d-md-none"
+            ></v-img>
           </v-col>
         </v-row>
       </v-container>
