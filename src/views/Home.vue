@@ -856,10 +856,11 @@
               <a
                 href="https://www.instagram.com/luztopia/"
                 class="white--text enfasis"
+                target="_blank"
                 >INSTAGRAM</a
               >
               –
-              <a href="mailto:hola@luztopia.mx" class="white--text enfasis"
+              <a href="https://www.youtube.com/channel/UC8Hi8cyOM5Nw_3nlY21wNQw" class="white--text enfasis" target="_blank"
                 >YOUTUBE</a
               >
             </div>
@@ -867,10 +868,11 @@
               <a
                 href="https://www.facebook.com/luztopia"
                 class="white--text enfasis"
+                target="_blank"
                 >FACEBOOK</a
               >
               –
-              <a href="https://twitter.com/luztopia" class="white--text enfasis"
+              <a href="https://twitter.com/luztopia" class="white--text enfasis" target="_blank"
                 >TWITTER</a
               >
             </div>
