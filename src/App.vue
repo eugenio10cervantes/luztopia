@@ -102,11 +102,11 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    $vuetify.goTo('#mapa');
+                    $vuetify.goTo('#atracciones');
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">MAPA</span>
+                  <span class="black--text menu-item">ATRACCIONES</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-2 py-sm-5">
@@ -115,11 +115,11 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    $vuetify.goTo('#atracciones');
+                    $vuetify.goTo('#mapa');
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">ATRACCIONES</span>
+                  <span class="black--text menu-item">MAPA</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-2 py-sm-5">

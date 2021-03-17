@@ -147,12 +147,14 @@
 
       <div id="informacion" style="overflow: hidden; position: relative; background-color: #1cec17">
         <v-container fluid class="py-0">
-          <v-row class="my-0">
+          <v-row class="my-0" align-sm="center">
             <v-col
               cols="12"
               sm="6"
               class="pt-0 pb-12"
               style="background-color: #1cec17; height: 100%"
+              order="1"
+              order-sm="0"
             >
               <v-row style="min-height: 100vh" align="start">
                 <v-col>
@@ -200,7 +202,7 @@
                         >PARQUE FUNDIDORA, PASEO SANTA LUCÍA</span
                       >
                       <span class="d-block white--text texto-corrido"
-                        >A. Fundidora y Adolfo Prieto, Col. Obrera,</span
+                        >Av. Fundidora y Adolfo Prieto, Col. Obrera,</span
                       >
                       <span class="d-block white--text texto-corrido"
                         >Monterrey, Nuevo León, México, CP 64010</span
@@ -251,19 +253,11 @@
             <v-col
               cols="12"
               sm="6"
-              class="py-0 px-0"
-              style="background-color: #ff00ea"
+              class="py-12 px-0 py-sm-0 text-center"
+              order="0"
+              order-sm="1"
             >
-              <v-img
-                src="../assets/img/visita-luztopia-iconos.gif"
-                style="height: 100%"
-                class="align-center text-center"
-              >
-                <span class="white--text enfasis"
-                  >¡VISITA EL FESTIVAL DE LUCES NAVIDEÑAS MÁS GRANDE DE
-                  MÉXICO!</span
-                >
-              </v-img>
+              <span class="enfasis d-inline-block py-5 py-sm-0 color-rosa">¡VISITA EL FESTIVAL DE LUCES NAVIDEÑAS MÁS GRANDE DE MÉXICO!</span>
             </v-col>
           </v-row>
         </v-container>
