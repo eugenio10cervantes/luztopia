@@ -110,6 +110,21 @@
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-2 py-sm-5">
+                <v-btn text :ripple="false" color="transparent">
+                  <v-btn
+                  text
+                  :ripple="false"
+                  color="transparent"
+                  @click="
+                  dialog=false;
+                    $vuetify.goTo('#boletos');
+                  "
+                >
+                  <span class="black--text menu-item">BOLETOS</span>
+                </v-btn>
+                </v-btn>
+              </v-col>
+              <v-col cols="auto" class="py-2 py-sm-5">
                 <v-btn
                   text
                   :ripple="false"
@@ -133,21 +148,6 @@
                   "
                 >
                   <span class="black--text menu-item">FAQs</span>
-                </v-btn>
-              </v-col>
-              <v-col cols="auto" class="py-2 py-sm-5">
-                <v-btn text :ripple="false" color="transparent">
-                  <v-btn
-                  text
-                  :ripple="false"
-                  color="transparent"
-                  @click="
-                  dialog=false;
-                    $vuetify.goTo('#boletos');
-                  "
-                >
-                  <span class="black--text menu-item">BOLETOS</span>
-                </v-btn>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-2 py-sm-5">
