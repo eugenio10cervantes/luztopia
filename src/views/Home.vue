@@ -189,7 +189,7 @@
                         >HORARIO:</span
                       >
                       <span class="d-block white--text texto-corrido-enfasis"
-                        >4pm - 11pm</span
+                        >5pm - 11pm</span
                       >
                       <span class="d-block white--text texto-corrido"
                         >(Encendido de luces: 6pm)</span
