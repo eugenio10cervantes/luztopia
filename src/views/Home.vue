@@ -223,6 +223,9 @@
                       <span class="d-block white--text texto-corrido"
                         >A10 - Fundidora, Calle Aramberri</span
                       >
+                      <span class="d-block white--text texto-corrido"
+                        >Estación Santa Lucía, Línea 3 Metrorrey, Av. Félix U. Gómez</span
+                      >
 
                       <span class="d-block color-rosa subtitulo bold mt-3"
                         >ESTACIONAMIENTOS RECOMENDADOS:</span
@@ -322,9 +325,41 @@
         </v-row>
       </v-container>
 
-      <v-container fluid id="boletos">
+      <v-container fluid id="boletos" style="background-color: rgb(10, 12, 250)">
         <v-row>
-          <v-col class="px-0 py-0">
+          <v-col class="px-0 py-0 text-center">
+            <v-row justify="center">
+              <v-col cols="10" md="12">
+                <v-img src="../assets/img/calendario/Luztopia-logo.png" class="mx-auto my-3" max-width="500px"></v-img>
+
+                <span class="d-block white--text texto-corrido-enfasis mx-auto text-center uppercase my-3">Del 18 de Nov 2021 al 16 de Ene 2022</span>
+                <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank">Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
+              </v-col>
+            </v-row>
+            <v-container>
+              <v-row justify="center">
+                <v-col cols="10" md="4">
+                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
+                    <v-img src="../assets/img/calendario/nov.png"></v-img>
+                  </a>
+                </v-col>
+                <v-col cols="10" md="4">
+                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
+                    <v-img src="../assets/img/calendario/dic.png"></v-img>
+                  </a>
+                </v-col>
+                <v-col cols="10" md="4">
+                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
+                    <v-img src="../assets/img/calendario/ene.png"></v-img>
+                  </a>
+                </v-col>
+                <v-col cols="10">
+                  <v-img src="../assets/img/calendario/info.png"></v-img>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-col>
+          <v-col class="px-0 py-0" v-if="false">
             <template v-if="home.videoBoletos.video">
               <video
                 :src="
@@ -336,6 +371,7 @@
                 loop
                 playsinline
                 class="d-none d-md-inline"
+                style="height: 100%"
               ></video>
             </template>
             <template v-if="home.videoBoletos.image">
