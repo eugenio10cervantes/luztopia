@@ -520,7 +520,7 @@
               <h3 class="mt-3 color-rosa texto-corrido">
                 ¿Aceptan pago con tarjeta?
               </h3>
-              Sí, tanto en la venta de boletos online como en taquilla se
+              Sí, tanto en la venta de boletos en línea como en taquilla se
               aceptan pagos con tarjeta de débito o crédito, Visa o Mastercard.
               No se acepta American Express.
 
