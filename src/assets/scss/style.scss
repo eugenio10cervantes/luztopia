@@ -194,3 +194,11 @@
         line-height: 1.3;
     }
 }
+
+#boletos{
+    background-color: #061aff !important;
+    @media screen and (min-width: 960px){
+        background-image: url('../img/NAVE.gif');
+        background-position: right bottom;
+    }
+}

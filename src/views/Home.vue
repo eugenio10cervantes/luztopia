@@ -224,6 +224,9 @@
                         >A10 - Fundidora, Calle Aramberri</span
                       >
                       <span class="d-block white--text texto-corrido"
+                        >-</span
+                      >
+                      <span class="d-block white--text texto-corrido"
                         >Estación Santa Lucía, Línea 3 Metrorrey, Av. Félix U. Gómez</span
                       >
 
@@ -325,33 +328,34 @@
         </v-row>
       </v-container>
 
-      <v-container fluid id="boletos" style="background-color: rgb(10, 12, 250)">
+      <v-container fluid id="boletos" class="pb-12" style="background-color: rgb(10, 12, 250);">
+        <v-row>
+          <v-col class="px-0 text-right">
+            <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
+            <h2 class="titulo">BOLETOS</h2>
+          </v-col>
+        </v-row>
         <v-row>
           <v-col class="px-0 py-0 text-center">
-            <v-row justify="center">
-              <v-col cols="10" md="12">
-                <v-img src="../assets/img/calendario/Luztopia-logo.png" class="mx-auto my-3" max-width="400px"></v-img>
-
-                <span class="d-block white--text texto-corrido-enfasis mx-auto text-center uppercase my-3">Del 18 de Nov 2021 al 16 de Ene 2022</span>
-                <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank">Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
-              </v-col>
-            </v-row>
             <v-container>
               <v-row justify="center">
-                <v-col cols="10" md="4">
+                <v-col cols="10" md="4" class="text-center">
                   <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
-                    <v-img src="../assets/img/calendario/nov.png" max-width="70%"></v-img>
+                    <v-img src="../assets/img/calendario/nov.png" max-width="70%" class="mx-auto"></v-img>
                   </a>
                 </v-col>
                 <v-col cols="10" md="4">
                   <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
-                    <v-img src="../assets/img/calendario/dic.png" max-width="70%"></v-img>
+                    <v-img src="../assets/img/calendario/dic.png" max-width="70%" class="mx-auto"></v-img>
                   </a>
                 </v-col>
                 <v-col cols="10" md="4">
                   <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
-                    <v-img src="../assets/img/calendario/ene.png" max-width="70%"></v-img>
+                    <v-img src="../assets/img/calendario/ene.png" max-width="70%" class="mx-auto"></v-img>
                   </a>
+                </v-col>
+                <v-col cols="12" md="12">
+                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank">Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
                 </v-col>
                 <v-col cols="10">
                   <v-img src="../assets/img/calendario/info.png"></v-img>
@@ -413,7 +417,7 @@
 
       <v-container fluid id="mapa" style="background-color: #e62ad0">
         <v-row>
-          <v-col class="px-0 text-right">
+          <v-col class="px-0">
             <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
             <h2 class="titulo">MAPA</h2>
           </v-col>
