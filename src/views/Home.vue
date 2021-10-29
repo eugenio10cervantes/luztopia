@@ -355,7 +355,7 @@
                   </a>
                 </v-col>
                 <v-col cols="12" md="12">
-                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank">Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
+                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
                 </v-col>
                 <v-col cols="10">
                   <v-img src="../assets/img/calendario/info.png"></v-img>
