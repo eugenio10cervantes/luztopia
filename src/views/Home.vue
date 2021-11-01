@@ -335,10 +335,13 @@
             <h2 class="titulo">BOLETOS</h2>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row class="mb-6">
           <v-col class="px-0 py-0 text-center">
             <v-container>
               <v-row justify="center">
+                <v-col cols="12" md="12">
+                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
+                </v-col>
                 <v-col cols="10" md="4" class="text-center">
                   <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
                     <v-img src="../assets/img/calendario/nov.png" max-width="70%" class="mx-auto"></v-img>
@@ -353,9 +356,6 @@
                   <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
                     <v-img src="../assets/img/calendario/ene.png" max-width="70%" class="mx-auto"></v-img>
                   </a>
-                </v-col>
-                <v-col cols="12" md="12">
-                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
                 </v-col>
                 <v-col cols="10">
                   <v-img src="../assets/img/calendario/info.png"></v-img>
@@ -479,9 +479,7 @@
                 <li>Patines</li>
                 <li>Perros de servicio</li>
               </ul>
-            </v-col>
-            <v-col cols="12" sm="4" class="white--text">
-              <h3 class="texto-corrido-enfasis">
+              <h3 class="mt-6 texto-corrido-enfasis">
                 ¿Qué <span class="color-rosa">NO</span> puedo llevar?
               </h3>
               <ul class="lista-faq">
@@ -498,8 +496,57 @@
                 <li>Drones</li>
               </ul>
             </v-col>
+            <v-col cols="12" sm="4" class="white--text">
+              <h3 class="color-rosa texto-corrido">
+                ¿Aplicarán acciones de prevención Covid-19?
+              </h3>
+              Sí. Nos entusiasma saber el avance que ha tenido la vacunación con los ciudadanos, sin embargo, hay que seguir cuidándonos. La salud y bienestar de la comunidad es muy importante para nosotros. Tomaremos las medidas necesarias sugeridas al momento por la Secretaría de Salud NL. Aforo limitado 75%. Uso de cubrebocas obligatorio para todos los visitantes. Embarazadas, niños y personas de la tercera edad sí pueden accesar.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Hay descuento de boletos por grupos?
+              </h3>
+              Sí! En la compra de mínimo 1,000 boletos hay un descuento especial del 10%. Contáctanos en <a href="hola@luztopia.mx" style="color: rgb(10, 12, 250) !important;" class="not-text-decoration">hola@luztopia.mx</a> para darle seguimiento a tu compra.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Está preparado el evento para personas con discapacidad?
+              </h3>
+              Sí.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Rentan sillas de ruedas?
+              </h3>
+              Sí, cantidad limitada, sujeto a disponibilidad
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Puedo accesar con mascotas?
+              </h3>
+              No está permitido el acceso con mascotas. Solo se permite el acceso con perros de servicio con su arnés y se debe presentar una carta médica en el acceso.
+            </v-col>
             <v-col cols="12" sm="4" class="white--text texto-corrido-medium">
               <h3 class="color-rosa texto-corrido">
+              ¿Los niños pagan boleto?
+              </h3>
+              Niños menores de 3 años no pagan boleto.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Hay taquilla en Luztopía?
+              </h3>
+              Sí. Horarios de taquilla: 5pm – 10:30pm <br>
+              Sin embargo, al tener un aforo limitado por día, recomendamos comprar con anticipación los boletos en línea, además sirve que te evitas filas.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Aceptan pago con tarjeta?
+              </h3>
+              Sí, tanto en la venta de boletos en línea como en la taquilla se aceptan pagos con tarjeta de débito o crédito, Visa o Mastercard. No se acepta American Express.
+
+              <h3 class="mt-3 color-rosa texto-corrido">
+                ¿Puedo ir al Paseo Santa Lucía sin entrar a Luztopía?
+              </h3>
+              Sí, puedes transitar con facilidad por los corredores externos
+
+              <!-- Preguntas pasadas -->
+
+              <!-- <h3 class="color-rosa texto-corrido">
                 ¿Está preparado el evento para personas con discapacidad?
               </h3>
               Sí.
@@ -536,7 +583,7 @@
               <h3 class="mt-3 color-rosa texto-corrido">
                 ¿Aplicarán acciones de prevención Covid-19?
               </h3>
-              Sí, en Luztopía estamos conscientes de la importancia de la prevención en esta contingencia ocasionada por el COVID-19; lo más importante es la salud y bienestar de nuestros visitantes y comunidad, por ello, tomaremos las medidas necesarias y sugeridas al momento por la Secretaría de Salud NL.
+              Sí, en Luztopía estamos conscientes de la importancia de la prevención en esta contingencia ocasionada por el COVID-19; lo más importante es la salud y bienestar de nuestros visitantes y comunidad, por ello, tomaremos las medidas necesarias y sugeridas al momento por la Secretaría de Salud NL. -->
 
             </v-col>
           </v-row>
