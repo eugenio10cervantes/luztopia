@@ -103,6 +103,93 @@
         </v-row>
       </v-container>
 
+      <v-container fluid id="boletos" class="pb-12" style="background-color: rgb(10, 12, 250);">
+        <v-row>
+          <v-col class="px-0 text-right">
+            <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
+            <h2 class="titulo">BOLETOS</h2>
+          </v-col>
+        </v-row>
+        <v-row class="mb-6">
+          <v-col class="px-0 py-0 text-center">
+            <v-container>
+              <v-row justify="center">
+                <v-col cols="12" md="12">
+                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>¡Compra tus boletos! <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
+                </v-col>
+                <v-col cols="10" md="4" class="text-center">
+                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
+                    <v-img src="../assets/img/calendario/nov.png" max-width="70%" class="mx-auto"></v-img>
+                  </a>
+                </v-col>
+                <v-col cols="10" md="4">
+                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
+                    <v-img src="../assets/img/calendario/dic.png" max-width="70%" class="mx-auto"></v-img>
+                  </a>
+                </v-col>
+                <v-col cols="10" md="4">
+                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
+                    <v-img src="../assets/img/calendario/ene.png" max-width="70%" class="mx-auto"></v-img>
+                  </a>
+                </v-col>
+                <v-col cols="10">
+                  <v-img src="../assets/img/calendario/info.png"></v-img>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-col>
+          <v-col class="px-0 py-0" v-if="false">
+            <template v-if="home.videoBoletos.video">
+              <video
+                :src="
+                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
+                  home.videoBoletos.path
+                "
+                autoplay
+                muted
+                loop
+                playsinline
+                class="d-none d-md-inline"
+                style="height: 100%"
+              ></video>
+            </template>
+            <template v-if="home.videoBoletos.image">
+              <v-img
+                :src="
+                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
+                  home.videoBoletos.path
+                "
+                class="d-none d-md-flex"
+                height="100vh"
+              ></v-img>
+            </template>
+            <template v-if="home.videoBoletosMovil.video">
+              <video
+                :src="
+                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
+                  home.videoBoletosMovil.path
+                "
+                autoplay
+                muted
+                loop
+                playsinline
+                class="d-md-none"
+              ></video>
+            </template>
+            <template v-if="home.videoBoletosMovil.image">
+              <v-img
+                :src="
+                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
+                  home.videoBoletosMovil.path
+                "
+                class="d-md-none"
+                width="100%"
+              ></v-img>
+            </template>
+          </v-col>
+        </v-row>
+      </v-container>
+
       <div class="teaser" style="position: relative; background-color: black">
         <v-container fluid class="py-0">
           <v-row>
@@ -271,7 +358,7 @@
 
       <v-container fluid id="atracciones" style="background-color: #e62ad0">
         <v-row>
-          <v-col class="px-0">
+          <v-col class="px-0 text-right">
             <!-- <v-img src="../assets/img/titulos/ATRACCIONES.svg" max-height="137" contain position="left"></v-img> -->
 
             <h2 class="titulo">ATRACCIONES</h2>
@@ -325,93 +412,6 @@
               </template>
             </v-col>
           </template>
-        </v-row>
-      </v-container>
-
-      <v-container fluid id="boletos" class="pb-12" style="background-color: rgb(10, 12, 250);">
-        <v-row>
-          <v-col class="px-0 text-right">
-            <!-- <v-img src="../assets/img/titulos/MAPA.svg" max-height="137" contain position="right"></v-img> -->
-            <h2 class="titulo">BOLETOS</h2>
-          </v-col>
-        </v-row>
-        <v-row class="mb-6">
-          <v-col class="px-0 py-0 text-center">
-            <v-container>
-              <v-row justify="center">
-                <v-col cols="12" md="12">
-                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>¡Compra tus boletos! <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
-                </v-col>
-                <v-col cols="10" md="4" class="text-center">
-                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
-                    <v-img src="../assets/img/calendario/nov.png" max-width="70%" class="mx-auto"></v-img>
-                  </a>
-                </v-col>
-                <v-col cols="10" md="4">
-                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
-                    <v-img src="../assets/img/calendario/dic.png" max-width="70%" class="mx-auto"></v-img>
-                  </a>
-                </v-col>
-                <v-col cols="10" md="4">
-                  <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
-                    <v-img src="../assets/img/calendario/ene.png" max-width="70%" class="mx-auto"></v-img>
-                  </a>
-                </v-col>
-                <v-col cols="10">
-                  <v-img src="../assets/img/calendario/info.png"></v-img>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-col>
-          <v-col class="px-0 py-0" v-if="false">
-            <template v-if="home.videoBoletos.video">
-              <video
-                :src="
-                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
-                  home.videoBoletos.path
-                "
-                autoplay
-                muted
-                loop
-                playsinline
-                class="d-none d-md-inline"
-                style="height: 100%"
-              ></video>
-            </template>
-            <template v-if="home.videoBoletos.image">
-              <v-img
-                :src="
-                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
-                  home.videoBoletos.path
-                "
-                class="d-none d-md-flex"
-                height="100vh"
-              ></v-img>
-            </template>
-            <template v-if="home.videoBoletosMovil.video">
-              <video
-                :src="
-                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
-                  home.videoBoletosMovil.path
-                "
-                autoplay
-                muted
-                loop
-                playsinline
-                class="d-md-none"
-              ></video>
-            </template>
-            <template v-if="home.videoBoletosMovil.image">
-              <v-img
-                :src="
-                  'https://luztopiacms.actstudio.xyz/storage/uploads' +
-                  home.videoBoletosMovil.path
-                "
-                class="d-md-none"
-                width="100%"
-              ></v-img>
-            </template>
-          </v-col>
         </v-row>
       </v-container>
 
