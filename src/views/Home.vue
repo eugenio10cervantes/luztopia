@@ -340,7 +340,7 @@
             <v-container>
               <v-row justify="center">
                 <v-col cols="12" md="12">
-                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>Compra tus boletos <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
+                  <v-btn class="mx-auto my-3" color="#e62ad0" dark :ripple="false" href="https://www.handypass.com/luztopia/2021/" target="_blank" x-large>¡Compra tus boletos! <v-icon size="14" class="ml-3">mdi-open-in-new</v-icon></v-btn>
                 </v-col>
                 <v-col cols="10" md="4" class="text-center">
                   <a href="https://www.handypass.com/luztopia/2021/" target="_blank">
@@ -505,7 +505,7 @@
               <h3 class="mt-3 color-rosa texto-corrido">
                 ¿Hay descuento de boletos por grupos?
               </h3>
-              Sí! En la compra de mínimo 1,000 boletos hay un descuento especial del 10%. Contáctanos en <a href="mailto:hola@luztopia.mx" style="color: rgb(10, 12, 250) !important;" class="not-text-decoration">hola@luztopia.mx</a> para darle seguimiento a tu compra.
+              Sí! En la compra de mínimo 1,000 boletos hay un descuento especial del 10%. Contáctanos en <a href="mailto:hola@luztopia.mx" style="color: white !important;">hola@luztopia.mx</a> para darle seguimiento a tu compra.
 
               <h3 class="mt-3 color-rosa texto-corrido">
                 ¿Está preparado el evento para personas con discapacidad?
