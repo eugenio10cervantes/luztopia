@@ -505,7 +505,7 @@
               <h3 class="mt-3 color-rosa texto-corrido">
                 ¿Hay descuento de boletos por grupos?
               </h3>
-              Sí! En la compra de mínimo 1,000 boletos hay un descuento especial del 10%. Contáctanos en <a href="hola@luztopia.mx" style="color: rgb(10, 12, 250) !important;" class="not-text-decoration">hola@luztopia.mx</a> para darle seguimiento a tu compra.
+              Sí! En la compra de mínimo 1,000 boletos hay un descuento especial del 10%. Contáctanos en <a href="mailto:hola@luztopia.mx" style="color: rgb(10, 12, 250) !important;" class="not-text-decoration">hola@luztopia.mx</a> para darle seguimiento a tu compra.
 
               <h3 class="mt-3 color-rosa texto-corrido">
                 ¿Está preparado el evento para personas con discapacidad?
