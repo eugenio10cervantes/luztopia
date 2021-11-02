@@ -36,7 +36,7 @@
 
       <v-container fluid class="intro py-0">
         <v-row class="my-0">
-          <v-col class="px-0 py-0">
+          <v-col class="px-0 py-0" style="line-height: 0;">
             <template v-if="home.cover.video">
               <video
                 :src="
@@ -47,7 +47,7 @@
                 muted
                 loop
                 playsinline
-                class="d-none d-md-inline"
+                class="d-none d-md-inline-flex"
               ></video>
             </template>
             <template v-if="home.cover.image">
