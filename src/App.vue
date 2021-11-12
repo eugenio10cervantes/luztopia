@@ -237,6 +237,9 @@ export default {
     dialog: false,
     faq: false
   }),
+  mounted: function () {
+    this.$gtag.pageview({ page_path: '/', page_name: 'Luztopia Home' })
+  },
   computed: {
     width: function () {
       return this.$vuetify.breakpoint.width
