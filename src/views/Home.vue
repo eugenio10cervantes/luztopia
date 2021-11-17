@@ -133,7 +133,7 @@
                   </a>
                 </v-col>
                 <v-col cols="10">
-                  <v-img src="../assets/img/calendario/info.png"></v-img>
+                  <v-img src="../assets/img/info-boletos.png"></v-img>
                 </v-col>
               </v-row>
             </v-container>
@@ -590,62 +590,6 @@
         </v-container>
       </v-container>
 
-      <v-container fluid id="patrocinadores" style="background-color: #e62ad0">
-        <v-row>
-          <v-col class="py-sm-0 py-0 pt-12 px-0">
-            <!-- <v-img src="../assets/img/titulos/patrocinadores.svg" max-height="137" contain position="left"></v-img> -->
-            <h2 class="titulo mt-4">PATROCINADORES Y ALIADOS</h2>
-          </v-col>
-        </v-row>
-      </v-container>
-
-      <div style="background-color: #e62ad0">
-        <v-container>
-          <v-row align="center" class="py-12">
-            <template v-for="(patrocinador, p) in patrocinadores">
-              <v-col :key="'sponsor-' + p" cols="6" md="2" class="py-0 px-0">
-                <v-img
-                  :src="
-                    'https://luztopiacms.actstudio.xyz/' +
-                    patrocinador.image.path
-                  "
-                  :contain="true"
-                  max-width="90%"
-                  class="mx-auto"
-                ></v-img>
-              </v-col>
-            </template>
-          </v-row>
-          <v-row>
-            <v-col>
-              <hr />
-            </v-col>
-          </v-row>
-          <v-row align="center" class="py-12">
-            <template v-for="(consejero, c) in consejo">
-              <v-col :key="'consejero-' + c" cols="6" md="2" class="py-0 px-0">
-                <v-img
-                  :src="
-                    'https://luztopiacms.actstudio.xyz/' + consejero.image.path
-                  "
-                  :contain="true"
-                  max-width="90%"
-                  class="mx-auto"
-                ></v-img>
-              </v-col>
-            </template>
-          </v-row>
-          <!-- <v-row class="mb-12 pb-12">
-            <v-col class="text-center">
-              <span class="d-block color-rosa texto-corrido mb-4">
-                ¡SUMATE AL EQUIPO!
-              </span>
-              <a class=" enfasis white--text" href="mailto:patrocinios@luztopia.mx">PATROCINIOS@LUZTOPIA.MX</a>
-            </v-col>
-          </v-row> -->
-        </v-container>
-      </div>
-
       <!-- <v-container fluid id="consejo" style="background-color: #0A0CFA;">
         <v-row>
           <v-col class="py-0 px-0 text-right">
@@ -906,10 +850,8 @@
                   class="mx-auto"
                   :contain="true"
                 ></v-img>
-                <p class="white--text mx-auto texto-descriptivo-empresas">
-                  Agencia orgullosamente mexicana especializada en el diseño y
-                  producción de decoración urbana y atracciones de
-                  entretenimiento.
+                <p class="white--text mx-auto texto-descriptivo-empresas text-center">
+                  Empresa especializada en el diseño y producción de decoración urbana y atracciones de entretenimiento.
                 </p>
               </v-col>
             </v-row>
@@ -917,6 +859,62 @@
           <!-- /cacao -->
         </v-container>
       </v-container>
+
+      <v-container fluid id="patrocinadores" style="background-color: #e62ad0">
+        <v-row>
+          <v-col class="py-sm-0 py-0 pt-12 px-0">
+            <!-- <v-img src="../assets/img/titulos/patrocinadores.svg" max-height="137" contain position="left"></v-img> -->
+            <h2 class="titulo mt-4">PATROCINADORES Y ALIADOS</h2>
+          </v-col>
+        </v-row>
+      </v-container>
+
+      <div style="background-color: #e62ad0">
+        <v-container>
+          <v-row align="center" class="py-12">
+            <template v-for="(patrocinador, p) in patrocinadores">
+              <v-col :key="'sponsor-' + p" cols="6" md="2" class="py-0 px-0">
+                <v-img
+                  :src="
+                    'https://luztopiacms.actstudio.xyz/' +
+                    patrocinador.image.path
+                  "
+                  :contain="true"
+                  max-width="90%"
+                  class="mx-auto"
+                ></v-img>
+              </v-col>
+            </template>
+          </v-row>
+          <v-row>
+            <v-col>
+              <hr />
+            </v-col>
+          </v-row>
+          <v-row align="center" class="py-12">
+            <template v-for="(consejero, c) in consejo">
+              <v-col :key="'consejero-' + c" cols="6" md="2" class="py-0 px-0">
+                <v-img
+                  :src="
+                    'https://luztopiacms.actstudio.xyz/' + consejero.image.path
+                  "
+                  :contain="true"
+                  max-width="90%"
+                  class="mx-auto"
+                ></v-img>
+              </v-col>
+            </template>
+          </v-row>
+          <!-- <v-row class="mb-12 pb-12">
+            <v-col class="text-center">
+              <span class="d-block color-rosa texto-corrido mb-4">
+                ¡SUMATE AL EQUIPO!
+              </span>
+              <a class=" enfasis white--text" href="mailto:patrocinios@luztopia.mx">PATROCINIOS@LUZTOPIA.MX</a>
+            </v-col>
+          </v-row> -->
+        </v-container>
+      </div>
 
       <v-container id="footer" fluid style="background-color: #1cec17">
         <v-row align="center" style="min-height: 450px">

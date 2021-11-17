@@ -156,11 +156,11 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    $vuetify.goTo('#patrocinadores');
+                    $vuetify.goTo('#comunidad');
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">PATROCINADORES</span>
+                  <span class="black--text menu-item">COMUNIDAD</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-2 py-sm-5">
@@ -169,11 +169,11 @@
                   :ripple="false"
                   color="transparent"
                   @click="
-                    $vuetify.goTo('#comunidad');
+                    $vuetify.goTo('#patrocinadores');
                     dialog = false;
                   "
                 >
-                  <span class="black--text menu-item">COMUNIDAD</span>
+                  <span class="black--text menu-item">PATROCINADORES</span>
                 </v-btn>
               </v-col>
               <v-col cols="auto" class="py-2 py-sm-5">
