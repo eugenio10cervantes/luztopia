@@ -6,6 +6,8 @@
           <v-col cols="6" sm="3" lg="4" class="text-left">
             <v-img src="@/assets/img/logo-luztopia.svg" height="50" contain position="left"></v-img>
           </v-col>
+          <v-col cols="4" sm="6" lg="4" class="d-none d-sm-block text-center">
+          </v-col>
           <template v-if="countdown != false">
             <v-col cols="4" sm="6" lg="4" class="d-none d-sm-block text-center">
               <span class="bold uppercase roboto-condensed footer-text">¡Faltan {{ countdown }} días!</span>
