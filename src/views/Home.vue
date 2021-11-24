@@ -196,7 +196,7 @@
             <v-col class="py-0 px-0">
               <video
                 id="teaser"
-                src="../assets/video/LUZTOPIA_2012-720.mp4"
+                src="https://www.luztopiacms.actstudio.xyz/storage/uploads/2021/11/24/619e9088eb3c4LUZTOPIA_2012-720.mp4"
                 style="width: 100%; object-fit: contain"
                 @ended="
                   rewind();
