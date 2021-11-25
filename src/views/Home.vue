@@ -11,7 +11,7 @@
             </div>
             <v-card-text class="pa-0">
               <v-img
-                :src="'https://luztopiacms.we-act.mx/' + popup.imagen.path"
+                :src="'https://www.luztopiacms.actstudio.xyz/' + popup.imagen.path"
               ></v-img>
               <!-- <v-img src="../assets/img/FOOTER.svg"></v-img> -->
             </v-card-text>
@@ -40,7 +40,7 @@
             <template v-if="home.cover.video">
               <video
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.cover.path
                 "
                 autoplay
@@ -53,7 +53,7 @@
             <template v-if="home.cover.image">
               <v-img
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.cover.path
                 "
                 width="100%"
@@ -63,7 +63,7 @@
               ></v-img>
               <v-img
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.cover.path
                 "
                 width="100%"
@@ -76,7 +76,7 @@
             <template v-if="home.coverMovil.video">
               <video
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.coverMovil.path
                 "
                 autoplay
@@ -91,7 +91,7 @@
             <template v-if="home.coverMovil.image">
               <v-img
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.coverMovil.path
                 "
                 width="100%"
@@ -142,7 +142,7 @@
             <template v-if="home.videoBoletos.video">
               <video
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.videoBoletos.path
                 "
                 autoplay
@@ -156,7 +156,7 @@
             <template v-if="home.videoBoletos.image">
               <v-img
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.videoBoletos.path
                 "
                 class="d-none d-md-flex"
@@ -166,7 +166,7 @@
             <template v-if="home.videoBoletosMovil.video">
               <video
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.videoBoletosMovil.path
                 "
                 autoplay
@@ -179,7 +179,7 @@
             <template v-if="home.videoBoletosMovil.image">
               <v-img
                 :src="
-                  'https://luztopiacms.we-act.mx/storage/uploads' +
+                  'https://www.luztopiacms.actstudio.xyz/storage/uploads' +
                   home.videoBoletosMovil.path
                 "
                 class="d-md-none"
@@ -370,7 +370,7 @@
               <template v-if="atraccion.removeHover">
                 <v-img
                   :src="
-                    'https://luztopiacms.we-act.mx/' + atraccion.image.path
+                    'https://www.luztopiacms.actstudio.xyz/' + atraccion.image.path
                   "
                   style="height: 100%"
                 >
@@ -380,7 +380,7 @@
                 <v-hover v-slot="{ hover }">
                   <v-img
                     :src="
-                      'https://luztopiacms.we-act.mx/' +
+                      'https://www.luztopiacms.actstudio.xyz/' +
                       atraccion.image.path
                     "
                     style="height: 100%"
@@ -425,11 +425,11 @@
         <v-row>
           <v-col class="px-0">
             <v-img
-              :src="'https://luztopiacms.we-act.mx/' + home.mapa.path"
+              :src="'https://www.luztopiacms.actstudio.xyz/' + home.mapa.path"
               class="d-none d-md-flex"
             ></v-img>
             <v-img
-              :src="'https://luztopiacms.we-act.mx/' + home.mapaMovil.path"
+              :src="'https://www.luztopiacms.actstudio.xyz/' + home.mapaMovil.path"
               class="d-md-none"
             ></v-img>
           </v-col>
@@ -438,14 +438,14 @@
           <v-col class="px-0 py-0">
             <v-img
               :src="
-                'https://luztopiacms.we-act.mx/' +
+                'https://www.luztopiacms.actstudio.xyz/' +
                 home.iconosMapaDesktop.path
               "
               class="d-none d-md-flex"
             ></v-img>
             <v-img
               :src="
-                'https://luztopiacms.we-act.mx/' + home.iconosMapaMovil.path
+                'https://www.luztopiacms.actstudio.xyz/' + home.iconosMapaMovil.path
               "
               class="d-md-none"
             ></v-img>
@@ -602,7 +602,7 @@
           <v-row align="center" class="py-12">
             <template v-for="(consejero,c) in consejo">
               <v-col :key="'consejero-'+c" cols="6" md="3">
-                <v-img :src="'https://luztopiacms.we-act.mx/'+consejero.image.path" :contain="true" max-width="60%" class="mx-auto" aspect-ratio="1"></v-img>
+                <v-img :src="'https://luztopiacms.actstudio.xyz/'+consejero.image.path" :contain="true" max-width="60%" class="mx-auto" aspect-ratio="1"></v-img>
               </v-col>
             </template>
           </v-row>
@@ -876,7 +876,7 @@
               <v-col :key="'sponsor-' + p" cols="6" md="2" class="py-0 px-0">
                 <v-img
                   :src="
-                    'https://luztopiacms.we-act.mx/' +
+                    'https://www.luztopiacms.actstudio.xyz/' +
                     patrocinador.image.path
                   "
                   :contain="true"
@@ -896,7 +896,7 @@
               <v-col :key="'consejero-' + c" cols="6" md="2" class="py-0 px-0">
                 <v-img
                   :src="
-                    'https://luztopiacms.we-act.mx/' + consejero.image.path
+                    'https://www.luztopiacms.actstudio.xyz/' + consejero.image.path
                   "
                   :contain="true"
                   max-width="90%"
@@ -964,14 +964,14 @@
           <v-col class="px-0 py-0">
             <v-img
               :src="
-                'https://luztopiacms.we-act.mx/' + home.footerImage.path
+                'https://www.luztopiacms.actstudio.xyz/' + home.footerImage.path
               "
               width="100%"
               class="d-none d-md-flex"
             ></v-img>
             <v-img
               :src="
-                'https://luztopiacms.we-act.mx/' +
+                'https://www.luztopiacms.actstudio.xyz/' +
                 home.footerImageMovil.path
               "
               width="100%"
@@ -992,8 +992,108 @@ export default {
       patrocinadores: [],
       consejo: [],
       atracciones: [],
-      home: {},
-      loaded: false,
+      home: {
+        cover: {
+          path: '/2021/11/02/61819f7d3c3d0LUZTOPIA-intro-rosa-convertido.mp4',
+          title: 'LUZTOPIA-intro-rosa (convertido).mp4',
+          mime: 'video/mp4',
+          description: '',
+          tags: [],
+          size: 187289,
+          image: false,
+          video: true,
+          audio: false,
+          archive: false,
+          document: false,
+          code: false,
+          created: 1635884925,
+          modified: 1635884925,
+          _by: '5ff35e34373936b74900006a',
+          folder: '',
+          _id: '61819f7d323630e8ff000011'
+        },
+        coverMovil: {
+          path: '/2021/11/02/61819f7c8edc1LUZTOPIA-intro-mobile-rosa-convertido.mp4',
+          title: 'LUZTOPIA-intro-mobile-rosa (convertido).mp4',
+          mime: 'video/mp4',
+          description: '',
+          tags: [],
+          size: 196914,
+          image: false,
+          video: true,
+          audio: false,
+          archive: false,
+          document: false,
+          code: false,
+          created: 1635884924,
+          modified: 1635884924,
+          _by: '5ff35e34373936b74900006a',
+          folder: '',
+          _id: '61819f7c3363369eee000030'
+        },
+        mapa: {
+          path: '/storage/uploads/2021/11/17/61951988a6dc5mapa-movil.jpg',
+          meta: {
+            title: null
+          }
+        },
+        iconosMapaDesktop: {
+          path: '/storage/uploads/2021/03/16/605125b006c64mapa-iconos-movil.jpg'
+        },
+        iconosMapaMovil: {
+          path: '/storage/uploads/2021/03/16/605125bdbb843mapa-iconos-desk.jpg'
+        },
+        videoBoletos: {
+          path: '/2021/09/22/614aaceba8715LUZTOPIA-BOLETOS_nov.mp4',
+          title: 'LUZTOPIA-BOLETOS_nov.mp4',
+          mime: 'video/mp4',
+          description: '',
+          tags: [],
+          size: 405863,
+          image: false,
+          video: true,
+          audio: false,
+          archive: false,
+          document: false,
+          code: false,
+          created: 1632283883,
+          modified: 1632283883,
+          _by: '5ff35e34373936b74900006a',
+          folder: '',
+          _id: '614aaceb333563253d0001cd'
+        },
+        _mby: '5ff35e34373936b74900006a',
+        _by: '5ff35e34373936b74900006a',
+        footerImage: {
+          path: '/storage/uploads/2021/01/08/5ff8d57592517FOOTER.png'
+        },
+        videoBoletosMovil: {
+          path: '/2021/09/22/614aaceba8715LUZTOPIA-BOLETOS_nov.mp4',
+          title: 'LUZTOPIA-BOLETOS_nov.mp4',
+          mime: 'video/mp4',
+          description: '',
+          tags: [],
+          size: 405863,
+          image: false,
+          video: true,
+          audio: false,
+          archive: false,
+          document: false,
+          code: false,
+          created: 1632283883,
+          modified: 1632283883,
+          _by: '5ff35e34373936b74900006a',
+          folder: '',
+          _id: '614aaceb333563253d0001cd'
+        },
+        footerImageMovil: {
+          path: '/storage/uploads/2021/02/23/60358b7ca43d1luztopia-ENCIENDETULUZ.jpg'
+        },
+        mapaMovil: {
+          path: '/storage/uploads/2021/11/17/619519809b7d5mapa-movil.jpg'
+        }
+      },
+      loaded: true,
       dialog: false,
       popup: {},
       terms: {},
@@ -1007,71 +1107,195 @@ export default {
   },
   components: {},
   beforeCreate: function () {
-    var aux = this
-    fetch(
-      'https://luztopiacms.we-act.mx/api/collections/get/Patrocinadores',
-      {
-        method: 'post',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sort: { _o: 1 },
-          populate: 1 // resolve linked collection items
-        })
+    this.patrocinadores = [{ name: 'CLUSTER DE TURISMO MONTERREY', image: { path: '/storage/uploads/2021/02/17/602ca77b202ca3-cluster-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 0, _modified: 1613539208, _created: 1613539208, _id: '602ca7886332346363000071', _pid: null, children: [] }, { name: 'CACAO', image: { path: '/storage/uploads/2021/02/17/602ca7906e3eb4-cacao-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 1, _modified: 1613539220, _created: 1613539220, _id: '602ca794346561263000012a', _pid: null, children: [] }, { name: 'FUNDIDORA', image: { path: '/storage/uploads/2021/02/17/602ca770d37b32-fundidora-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 2, _modified: 1613539189, _created: 1613539189, _id: '602ca775626530d74b000246', _pid: null, children: [] }, { name: 'NUEVO LE\u00d3N', image: { path: '/storage/uploads/2021/02/17/602ca7628451e1-nuevoleon-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 3, _modified: 1613539177, _created: 1613539177, _id: '602ca7693261376cd2000275', _pid: null, children: [] }, { name: 'LAMOSA', image: { path: '/storage/uploads/2021/02/17/602ca7a11ae046-lamosa-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 4, _modified: 1613539236, _created: 1613539236, _id: '602ca7a4353461f36c0000e3', _pid: null, children: [] }, { name: 'LTH', image: { path: '/storage/uploads/2021/02/17/602ca7aa4c93e7-lth-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 5, _modified: 1613539247, _created: 1613539247, _id: '602ca7af653263fb0f0001e9', _pid: null, children: [] }, { name: 'LA FINA', image: { path: '/storage/uploads/2021/02/17/602ca7b6214228-lafina-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 6, _modified: 1613539259, _created: 1613539259, _id: '602ca7bb63313540ec000149', _pid: null, children: [] }, { name: 'EL GOBIERNO DEL NUEVO NUEVO LE\u00d3N', image: { path: '/storage/uploads/2021/11/16/6194318751318gobierno-nl.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 7, _modified: 1637102012, _created: 1637102012, _id: '619431bc35353267200002e2', _pid: null, children: [] }, { name: 'OCV', image: { path: '/storage/uploads/2021/03/05/6041d4f3763d4ocv-lutopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 8, _modified: 1614927097, _created: 1614927097, _id: '6041d4f96262366c5b000363', _pid: null, children: [] }, { name: 'MCALLEN INTERNATIONAL AIRPORT', image: { path: '/storage/uploads/2021/11/16/619431df362edmcallen-aeropuerto.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 9, _modified: 1637102058, _created: 1637102058, _id: '619431ea3637323fbe0002f2', _pid: null, children: [] }, { name: 'HEB', image: { path: '/storage/uploads/2021/02/17/602ca7989d17f5-heb-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 10, _modified: 1613539227, _created: 1613539227, _id: '602ca79b3138318c8f00016b', _pid: null, children: [] }, { name: 'BEREL', image: { path: '/storage/uploads/2021/02/17/602ca7fce2a5c12-berel-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 11, _modified: 1613539329, _created: 1613539329, _id: '602ca801663938c92a00007c', _pid: null, children: [] }, { name: 'AFIRME', image: { path: '/storage/uploads/2021/11/16/61943137dfc51afirme.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 12, _modified: 1637101883, _created: 1637101883, _id: '6194313b37353042d8000026', _pid: null, children: [] }, { name: 'COCA-COLA', image: { path: '/storage/uploads/2021/02/17/602ca7eeeccc711-cocacola-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 13, _modified: 1613539318, _created: 1613539318, _id: '602ca7f6646335c7320001a9', _pid: null, children: [] }, { name: 'VIVA AEROBUS', image: { path: '/storage/uploads/2021/02/17/602ca807212ee13-viva-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 14, _modified: 1613539344, _created: 1613539344, _id: '602ca810663430fc130001ba', _pid: null, children: [] }, { name: 'FRISA', image: { path: '/storage/uploads/2021/11/16/6194314455340frisa.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 15, _modified: 1637101899, _created: 1637101894, _id: '619431463831663cdd00005e', _pid: null, children: [] }, { name: 'BIN', image: { path: '/storage/uploads/2021/02/17/602ca819c5e4414-bin-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 16, _modified: 1637188939, _created: 1637188939, _id: '6195854b6139306948000286', _pid: null, children: [] }, { name: 'GRUPO PROTEXA', image: { path: '/storage/uploads/2021/11/16/619431c26f27egrupo-protexa.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 17, _modified: 1637102028, _created: 1637102028, _id: '619431cc3337650027000365', _pid: null, children: [] }, { name: 'XIGNUX', image: { path: '/storage/uploads/2021/11/16/619431fe9f20axignux.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 18, _modified: 1637102080, _created: 1637102080, _id: '61943200626238984c000019', _pid: null, children: [] }, { name: 'PANEL REY', image: { path: '/storage/uploads/2021/02/17/602ca84599f1e17-panelrey-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 19, _modified: 1613539402, _created: 1613539402, _id: '602ca84a3536357a850001aa', _pid: null, children: [] }, { name: 'CEMEX', image: { path: '/storage/uploads/2021/02/17/602ca7d27a63e10-cemex-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 20, _modified: 1613539286, _created: 1613539286, _id: '602ca7d638303248e70001ab', _pid: null, children: [] }, { name: 'SAN JORGE', image: { path: '/storage/uploads/2021/11/17/6195386f6c446san-jorge.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 21, _modified: 1637169266, _created: 1613539388, _id: '602ca83c6334302f2a0003a1', _pid: null, children: [] }, { name: 'GOBIERNO DE MONTERREY', image: { path: '/storage/uploads/2021/11/16/61943174b7a83gob-mty.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 22, _modified: 1637101949, _created: 1637101949, _id: '6194317d3130337bcc0003cc', _pid: null, children: [] }, { name: 'DELOITTE', image: { path: '/storage/uploads/2021/02/17/602ca850b42ef18-deloitte-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 23, _modified: 1613539416, _created: 1613539416, _id: '602ca8586264356a9d0003a4', _pid: null, children: [] }, { name: 'IOS ', image: { path: '/storage/uploads/2021/02/17/602ca82b358d215-ios-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 24, _modified: 1613539373, _created: 1613539373, _id: '602ca82d643033bbd30000c4', _pid: null, children: [] }, { name: 'KEY', image: { path: '/storage/uploads/2021/11/16/619431d3bea3ckey.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 25, _modified: 1637102040, _created: 1637102040, _id: '619431d8373836320a00013c', _pid: null, children: [] }]
+    // fetch(
+    //   'https://luztopiacms.actstudio.xyz/api/collections/get/Patrocinadores',
+    //   {
+    //     method: 'post',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({
+    //       sort: { _o: 1 },
+    //       populate: 1 // resolve linked collection items
+    //     })
+    //   }
+    // )
+    //   .then((res) => res.json())
+    //   .then(function (res) {
+    //     aux.patrocinadores = res.entries
+    //   })
+
+    this.consejo = [{ name: 'SENDA', image: { path: '/storage/uploads/2021/02/17/602caa615ed0d27-senda-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 0, _modified: 1613539939, _created: 1613539939, _id: '602caa63316466f94d000326', _pid: null, children: [] }, { name: 'MARCO', image: { path: '/storage/uploads/2021/02/17/602caa1e42e1624-marco-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 1, _modified: 1613539873, _created: 1613539873, _id: '602caa2137353651be00032d', _pid: null, children: [] }, { name: 'SAL\u00d3N DE LA FAMA', image: { path: '/storage/uploads/2021/11/16/61943380835d8salon-de-la-fama.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 2, _modified: 1637102470, _created: 1637102470, _id: '61943386393639204e000259', _pid: null, children: [] }, { name: 'OMA', image: { path: '/storage/uploads/2021/02/17/602caa443478225-oma-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 3, _modified: 1613539910, _created: 1613539910, _id: '602caa4638386133800003c5', _pid: null, children: [] }, { name: 'FUERZA REGIA', image: { path: '/storage/uploads/2021/02/17/602caa050b2a722-regia-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 4, _modified: 1613539849, _created: 1613539849, _id: '602caa093730366a310001d2', _pid: null, children: [] }, { name: 'RAYADOS', image: { path: '/storage/uploads/2021/02/17/602caa6ba783128-rayados-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 5, _modified: 1613539951, _created: 1613539951, _id: '602caa6f35393922e7000114', _pid: null, children: [] }, { name: 'SULTANES', image: { path: '/storage/uploads/2021/02/17/602caa83e64d030-sultanes-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 6, _modified: 1613539976, _created: 1613539976, _id: '602caa88303739cfd600013e', _pid: null, children: [] }, { name: 'TIGRES', image: { path: '/storage/uploads/2021/02/17/602caa9140dd331-tigres-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 7, _modified: 1613539988, _created: 1613539988, _id: '602caa94386133ba22000197', _pid: null, children: [] }, { name: 'BLACHERE', image: { path: '/storage/uploads/2021/11/16/619433435fefbblachere.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 8, _modified: 1637102409, _created: 1637102409, _id: '61943349663535bf9200012a', _pid: null, children: [] }, { name: 'CANIRAC', image: { path: '/storage/uploads/2021/11/17/61952841832adcanirac.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 9, _modified: 1637165123, _created: 1637102425, _id: '619433596239657c4d00015a', _pid: null, children: [] }, { name: 'BALLET DE MONTERREY', image: { path: '/storage/uploads/2021/02/17/602ca9ec1949720-ballet-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 10, _modified: 1613539827, _created: 1613539827, _id: '602ca9f3396437522a0002a7', _pid: null, children: [] }, { name: 'CHIPINQUE', image: { path: '/storage/uploads/2021/02/17/602ca9fa9894d21-chipinque-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 11, _modified: 1613539838, _created: 1613539838, _id: '602ca9fe316266b3cd0001d3', _pid: null, children: [] }, { name: 'HORNO 3', image: { path: '/storage/uploads/2021/02/17/602caa103466c23-horno3-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 12, _modified: 1613539860, _created: 1613539860, _id: '602caa1430306132a8000175', _pid: null, children: [] }, { name: 'CONARTE', image: { path: '/storage/uploads/2021/11/16/6194335fcda64conarte.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 13, _modified: 1637102437, _created: 1637102437, _id: '61943365383838851d00018d', _pid: null, children: [] }, { name: 'PAPALOTE', image: { path: '/storage/uploads/2021/02/17/602caa78289cf29-papalote-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 14, _modified: 1613539963, _created: 1613539963, _id: '602caa7b313538fc3c0003c6', _pid: null, children: [] }, { name: '3 museos', image: { path: '/storage/uploads/2021/02/17/602ca9e4a5ef519-3museos-luztopia.png' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 15, _modified: 1637162349, _created: 1637162349, _id: '61951d6d66626552c0000242', children: [] }]
+
+    // fetch('https://luztopiacms.actstudio.xyz/api/collections/get/Consejo', {
+    //   method: 'post',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify({
+    //     sort: { _o: 1 },
+    //     populate: 1 // resolve linked collection items
+    //   })
+    // })
+    //   .then((res) => res.json())
+    //   .then(function (res) {
+    //     aux.consejo = res.entries
+    //   })
+
+    this.atracciones = [{ name: 'M\u00c1S DE 200 FIGURAS ILUMINADAS', description: '', image: { path: '/storage/uploads/2021/02/17/602c943823c421-figurasiluminadas-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 0, _modified: 1613534272, _created: 1609801657, _id: '5ff39fb9383538b22c000017', _pid: null, children: [] }, { name: 'CASTILLO', description: '', image: { path: '/storage/uploads/2021/02/17/602c945ad2d882-castillo-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 1, _modified: 1613534416, _created: 1613534300, _id: '602c945c313561f153000162', _pid: null, children: [] }, { name: 'OVNI', description: '', image: { path: '/storage/uploads/2021/02/23/60358c7c6a525luztopia-ovni.jpg' }, removeHover: true, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 2, _modified: 1614122111, _created: 1614121173, _id: '603588d53066356d1b000289', _pid: null, children: [] }, { name: 'NAVE', description: '', image: { path: '/storage/uploads/2021/02/23/6035898542ad9luztopia-nave.jpg' }, removeHover: true, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 3, _modified: 1614121415, _created: 1614121108, _id: '60358894393665597e000080', _pid: null, children: [] }, { name: 'RUEDA DE LA FORTUNA', description: '', image: { path: '/storage/uploads/2021/02/17/602c94addd7363-rudeadelafortuna-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 4, _modified: 1613534427, _created: 1613534383, _id: '602c94af3139617b62000398', _pid: null, children: [] }, { name: 'CASA DE SANTA', description: '', image: { path: '/storage/uploads/2021/02/17/602c94c33c4424-casadesanta-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 5, _modified: 1613534406, _created: 1613534406, _id: '602c94c66664346ac2000117', _pid: null, children: [] }, { name: 'TRINEO DE SANTA', description: '', image: { path: '/storage/uploads/2021/02/17/602c94e913a7c4-trineodesanta-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 6, _modified: 1613534448, _created: 1613534448, _id: '602c94f06266383a850001c0', _pid: null, children: [] }, { name: 'PLANETA', description: '', image: { path: '/storage/uploads/2021/02/23/60358985c406cluztopia-planeta.jpg' }, removeHover: true, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 7, _modified: 1614121473, _created: 1614121473, _id: '60358a0161356107010002ba', _pid: null, children: [] }, { name: 'T\u00daNEL GIRATORIO', description: '', image: { path: '/storage/uploads/2021/02/17/602c950c8586a6-tunel-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 8, _modified: 1613534478, _created: 1613534478, _id: '602c950e6532391de500012e', _pid: null, children: [] }, { name: 'PINO', description: '', image: { path: '/storage/uploads/2021/02/17/602c95184a9a17-pino-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 9, _modified: 1613534490, _created: 1613534490, _id: '602c951a61373519ce0002a7', _pid: null, children: [] }, { name: 'FOOD TRUCKS', description: '', image: { path: '/storage/uploads/2021/02/17/602c952966eec8-foodtruck-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 10, _modified: 1613534507, _created: 1613534507, _id: '602c952b6435365491000285', _pid: null, children: [] }, { name: 'L', description: '', image: { path: '/storage/uploads/2021/02/23/60358af1db5e2luztopia-L.jpg' }, removeHover: true, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 11, _modified: 1614121720, _created: 1614121720, _id: '60358af8376232f85300012c', _pid: null, children: [] }, { name: 'ENCIENDETULUZ', description: '', image: { path: '/storage/uploads/2021/02/23/60358b7ca43d1luztopia-ENCIENDETULUZ.jpg' }, removeHover: true, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 12, _modified: 1614121863, _created: 1614121863, _id: '60358b873939306c02000166', _pid: null, children: [] }, { name: 'MERCADO DE ARTESAN\u00cdAS', description: '', image: { path: '/storage/uploads/2021/03/06/6042c60ca88829-artesanias-LUZTOPIA-2.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 13, _modified: 1614988816, _created: 1613534526, _id: '602c953e383836448f00034e', _pid: null, removeHover: false, children: [] }, { name: 'SHOWS MUSICALES', description: '', image: { path: '/storage/uploads/2021/02/17/602c954bb0ef610-musicales-LUZTOPIA.jpg' }, _mby: '5ff35e34373936b74900006a', _by: '5ff35e34373936b74900006a', _o: 14, _modified: 1613534542, _created: 1613534542, _id: '602c954e66356135c50002c6', _pid: null, children: [] }]
+
+    // fetch(
+    //   'https://luztopiacms.actstudio.xyz/api/collections/get/Atracciones',
+    //   {
+    //     method: 'post',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({
+    //       sort: { _o: 1 },
+    //       populate: 1 // resolve linked collection items
+    //     })
+    //   }
+    // )
+    //   .then((res) => res.json())
+    //   .then(function (res) {
+    //     aux.atracciones = res.entries
+    //   })
+    this.home = {
+      cover: {
+        path: '/2021/11/02/61819f7d3c3d0LUZTOPIA-intro-rosa-convertido.mp4',
+        title: 'LUZTOPIA-intro-rosa (convertido).mp4',
+        mime: 'video/mp4',
+        description: '',
+        tags: [],
+        size: 187289,
+        image: false,
+        video: true,
+        audio: false,
+        archive: false,
+        document: false,
+        code: false,
+        created: 1635884925,
+        modified: 1635884925,
+        _by: '5ff35e34373936b74900006a',
+        folder: '',
+        _id: '61819f7d323630e8ff000011'
+      },
+      coverMovil: {
+        path: '/2021/11/02/61819f7c8edc1LUZTOPIA-intro-mobile-rosa-convertido.mp4',
+        title: 'LUZTOPIA-intro-mobile-rosa (convertido).mp4',
+        mime: 'video/mp4',
+        description: '',
+        tags: [],
+        size: 196914,
+        image: false,
+        video: true,
+        audio: false,
+        archive: false,
+        document: false,
+        code: false,
+        created: 1635884924,
+        modified: 1635884924,
+        _by: '5ff35e34373936b74900006a',
+        folder: '',
+        _id: '61819f7c3363369eee000030'
+      },
+      mapa: {
+        path: '/storage/uploads/2021/11/17/61951988a6dc5mapa-movil.jpg',
+        meta: {
+          title: null
+        }
+      },
+      iconosMapaDesktop: {
+        path: '/storage/uploads/2021/03/16/605125b006c64mapa-iconos-movil.jpg'
+      },
+      iconosMapaMovil: {
+        path: '/storage/uploads/2021/03/16/605125bdbb843mapa-iconos-desk.jpg'
+      },
+      videoBoletos: {
+        path: '/2021/09/22/614aaceba8715LUZTOPIA-BOLETOS_nov.mp4',
+        title: 'LUZTOPIA-BOLETOS_nov.mp4',
+        mime: 'video/mp4',
+        description: '',
+        tags: [],
+        size: 405863,
+        image: false,
+        video: true,
+        audio: false,
+        archive: false,
+        document: false,
+        code: false,
+        created: 1632283883,
+        modified: 1632283883,
+        _by: '5ff35e34373936b74900006a',
+        folder: '',
+        _id: '614aaceb333563253d0001cd'
+      },
+      _mby: '5ff35e34373936b74900006a',
+      _by: '5ff35e34373936b74900006a',
+      footerImage: {
+        path: '/storage/uploads/2021/01/08/5ff8d57592517FOOTER.png'
+      },
+      videoBoletosMovil: {
+        path: '/2021/09/22/614aaceba8715LUZTOPIA-BOLETOS_nov.mp4',
+        title: 'LUZTOPIA-BOLETOS_nov.mp4',
+        mime: 'video/mp4',
+        description: '',
+        tags: [],
+        size: 405863,
+        image: false,
+        video: true,
+        audio: false,
+        archive: false,
+        document: false,
+        code: false,
+        created: 1632283883,
+        modified: 1632283883,
+        _by: '5ff35e34373936b74900006a',
+        folder: '',
+        _id: '614aaceb333563253d0001cd'
+      },
+      footerImageMovil: {
+        path: '/storage/uploads/2021/02/23/60358b7ca43d1luztopia-ENCIENDETULUZ.jpg'
+      },
+      mapaMovil: {
+        path: '/storage/uploads/2021/11/17/619519809b7d5mapa-movil.jpg'
       }
-    )
-      .then((res) => res.json())
-      .then(function (res) {
-        aux.patrocinadores = res.entries
-      })
+    }
 
-    fetch('https://luztopiacms.we-act.mx/api/collections/get/Consejo', {
-      method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        sort: { _o: 1 },
-        populate: 1 // resolve linked collection items
-      })
-    })
-      .then((res) => res.json())
-      .then(function (res) {
-        aux.consejo = res.entries
-      })
+    // fetch('https://luztopiacms.actstudio.xyz/api/singletons/get/Home')
+    //   .then((data) => data.json())
+    //   .then(function (data) {
+    //     aux.home = data
+    //     aux.loaded = true
+    //   })
 
-    fetch(
-      'https://luztopiacms.we-act.mx/api/collections/get/Atracciones',
+    this.loaded = true
+
+    this.terms = {
+      texto: '<h1>T&eacute;rminos y Condiciones</h1>\n<p>&nbsp;</p>\n<p>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nulla consequat massa quis enim. Praesent egestas tristique nibh. Praesent vestibulum dapibus nibh.</p>\n<p>Sed a libero. Praesent adipiscing. Sed a libero. Fusce vulputate eleifend sapien. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.</p>\n<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Vestibulum ullamcorper mauris at ligula. Aliquam erat volutpat. Nunc nonummy metus.</p>\n<p>Pellentesque commodo eros a enim. Morbi mollis tellus ac sapien. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Ut varius tincidunt libero. In hac habitasse platea dictumst.</p>\n<p>Etiam iaculis nunc ac metus. In hac habitasse platea dictumst. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Etiam sit amet orci eget eros faucibus tincidunt. In auctor lobortis lacus.</p>\n<p>Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nullam vel sem. Fusce vel dui. Ut non enim eleifend felis pretium feugiat. In ut quam vitae odio lacinia tincidunt.</p>\n<p>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nulla consequat massa quis enim. Praesent egestas tristique nibh. Praesent vestibulum dapibus nibh.</p>\n<p>Sed a libero. Praesent adipiscing. Sed a libero. Fusce vulputate eleifend sapien. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.</p>\n<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Vestibulum ullamcorper mauris at ligula. Aliquam erat volutpat. Nunc nonummy metus.</p>\n<p>Pellentesque commodo eros a enim. Morbi mollis tellus ac sapien. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Ut varius tincidunt libero. In hac habitasse platea dictumst.</p>\n<p>Etiam iaculis nunc ac metus. In hac habitasse platea dictumst. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Etiam sit amet orci eget eros faucibus tincidunt. In auctor lobortis lacus.</p>\n<p>Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nullam vel sem. Fusce vel dui. Ut non enim eleifend felis pretium feugiat. In ut quam vitae odio lacinia tincidunt.</p>',
+      _mby: '5ff35e34373936b74900006a',
+      _by: '5ff35e34373936b74900006a'
+    }
+
+    // fetch('https://luztopiacms.actstudio.xyz/api/singletons/get/Terminos')
+    //   .then((data) => data.json())
+    //   .then(function (data) {
+    //     aux.terms = data
+    //   })
+
+    this.popup =
       {
-        method: 'post',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sort: { _o: 1 },
-          populate: 1 // resolve linked collection items
-        })
+        imagen: {
+          path: '/storage/uploads/2021/01/21/6008def03eaf3LUZTOPIA-BOLETOS-PROX-movil.gif'
+        },
+        active: false,
+        _mby: '5ff35e34373936b74900006a',
+        _by: '5ff35e34373936b74900006a',
+        link: 'https://www.facebook.com/luztopia'
       }
-    )
-      .then((res) => res.json())
-      .then(function (res) {
-        aux.atracciones = res.entries
-      })
 
-    fetch('https://luztopiacms.we-act.mx/api/singletons/get/Home')
-      .then((data) => data.json())
-      .then(function (data) {
-        aux.home = data
-        aux.loaded = true
-      })
-
-    fetch('https://luztopiacms.we-act.mx/api/singletons/get/Terminos')
-      .then((data) => data.json())
-      .then(function (data) {
-        aux.terms = data
-      })
-
-    fetch('https://luztopiacms.we-act.mx/api/singletons/get/Popup')
-      .then((data) => data.json())
-      .then(function (data) {
-        aux.popup = data
-        aux.dialog = aux.popup.active
-      })
+    // fetch('https://luztopiacms.actstudio.xyz/api/singletons/get/Popup')
+    //   .then((data) => data.json())
+    //   .then(function (data) {
+    //     aux.popup = data
+    //     aux.dialog = aux.popup.active
+    //   })
   },
   methods: {
     playVideo: function () {
